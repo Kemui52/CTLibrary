@@ -2,7 +2,7 @@
 
 This table comes with a LUA trainer that makes playable monsters less glitchy, as well as assembly hacks that make the Devour skill always hit and work on any enemy. The table itself is filled with a lot of data and can be confusing, but it does have the addresses necessary to change out your party for a monster, redirect names, and customize battle encounters.
 
-Currently, about ``sixteen`` monsters are refined. Devour patching is 99% finished, unless I missed a spot.
+Currently, at least ``sixteen`` monsters are refined. Devour patching is 99% finished, unless I missed a spot.
 
 This is set up with a pointer for DuckStation 0.1-4918-g82965f74. You can swop it out for any other emulator pointer that leads to the start of PSX RAM. Examples from older emulators are at the bottom of the table.
 
@@ -60,11 +60,11 @@ C005F146 00000003
 
 ## Known Quirks
 
-todo: explain more of the quirks, like can't fight an enemy you're playing as or how weird the stats are or the unavoidable status menu lag or how summon breaks if playing as a monster
+todo: explain more of the quirks, like can't fight an enemy you're playing as or how weird the stats are or the unavoidable status menu lag or how summon can't be used at all if playing as a monster
 
 ## Credits
 
-Most codes in the table were found by folks on GameHacking.org
+Most codes in the table were found by folks on GameHacking.org.
 
 The data that I found are:
 - Pointers for emulator RAM
