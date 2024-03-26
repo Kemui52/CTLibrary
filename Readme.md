@@ -1,6 +1,6 @@
 # Kemui52's Misc. Cheat Tables
 
-A general list of cheat tables I've done that are worthwhile and usable.
+A general list of cheat tables I've done that I think are worthwhile and usable. They are primarily macro-related.
 
 ## How to Download from GitHub?
 

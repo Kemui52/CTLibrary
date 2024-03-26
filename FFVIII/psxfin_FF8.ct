@@ -49,7 +49,7 @@
           <Description>"Save Anywhere"</Description>
           <DropDownList DisplayValueAsItem="1">0100:Save
 </DropDownList>
-          <LastState Value="0000" RealAddress="1BED401A27A"/>
+          <LastState Value="0300" RealAddress="1BED401A27A"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>2 Bytes</VariableType>
           <Address>+1FA27A</Address>
@@ -61,7 +61,7 @@
 02:Music on, sound effects off
 03:Music &amp; sound effects off
 </DropDownList>
-          <LastState Value="03" RealAddress="1BED3E972F4"/>
+          <LastState Value="00" RealAddress="1BED3E972F4"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>Byte</VariableType>
           <Address>+772F4</Address>
@@ -3166,7 +3166,7 @@ FF:None
                   <ID>1455</ID>
                   <Description>"Character"</Description>
                   <DropDownListLink>MODEL IDS</DropDownListLink>
-                  <LastState Value="95" RealAddress="1BED3E979D8"/>
+                  <LastState Value="9B" RealAddress="1BED3E979D8"/>
                   <ShowAsHex>1</ShowAsHex>
                   <VariableType>Byte</VariableType>
                   <Address>+8</Address>
@@ -7642,7 +7642,7 @@ Ejj qwqrckq em.:All systems go!
         <CheatEntry>
           <ID>208</ID>
           <Description>"Game Time"</Description>
-          <LastState Value="0001C8DC" RealAddress="1BED3E98048"/>
+          <LastState Value="0001D75F" RealAddress="1BED3E98048"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
           <Address>+78048</Address>
@@ -8418,6 +8418,8 @@ FF:Cannot
 -Pointers for emulator RAM
 -Size modifiers &amp; in-game pointers
 -Devour codes
+-Enemy AnimSets
+-Name assembly
 Most other codes found by folks on GameHacking.org
 ---
 ---(personal notes)
@@ -9135,7 +9137,7 @@ function ButtonAltAttackHelp(Self)
  if StrAltAttackArray[ValuPartyModel] then
   CompMemAltAttackHelp.Lines.Text = StrAltAttackArray[ValuPartyModel]
  elseif ValuPartyModel == 0xFF then
-  CompMemAltAttackHelp.Lines.Text = "Slot not present."
+  CompMemAltAttackHelp.Lines.Text = "No character is\npresent here."
  else
   CompMemAltAttackHelp.Lines.Text = "No info for this\nmodel."
  end
