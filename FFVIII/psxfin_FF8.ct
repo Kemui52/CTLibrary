@@ -1280,7 +1280,7 @@
           <Options moManualExpandCollapse="1"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
-          <Address>+1696AC</Address>
+          <Address>+169C40</Address>
           <CheatEntries>
             <CheatEntry>
               <ID>1410</ID>
@@ -7353,20 +7353,35 @@ Fmim:Boko
 Uscx_amrj:Quezacotl
 Wfgt_:Shiva
 Mdpgr:Ifrit
+Gcp`cpsq:Cerberus
 F_f_ksr:Bahamut
 Qmlqrcp:Monster
+Hp_eml:Dragon
 Kg_lr:Giant
 Kg_lrcqq:Giantess
 Qcqkcpgxc:Mesmerize
-Wlmu Pgml:Snow Lion
 El_amlb_sp:Anacondaur
+Fmk`:Bomb
+Wlmu Pgml:Snow Lion
+E`wqq [mpk:Abyss Worm
 Safs:Ochu
+Q_j`mpm:Malboro
 Mpml Kg_lr:Iron Giant
+Fcfckmrf:Behemoth
 X2Vcv_sp:T-Rexaur
+Vs`w Hp_eml:Ruby Dragon
+G_ars_p:Cactuar
 Xmp_k_:Torama
 Qglmr_sp:Minotaur
 W_apcb:Sacred
+Nsk`m G_ars_p:Jumbo Cactuar
 Yjrgkcag_:Ultimecia
+Vcb Kg_lr:Red Giant
+Xg_k_r:Tiamat
+G_rm`jcn_q:Catoblepas
+YJS/:UFO?
+YJS:UFO
+Hskkw:Dummy
 </DropDownList>
               <LastState Value="" RealAddress="00000000"/>
               <GroupHeader>1</GroupHeader>
@@ -8202,7 +8217,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
      if IntAltAttack == nil then
       IntAltAttack = 0x0165
      end
-     WriteSmallInteger(AddrAnimSetData+0x07*2,0x01E2) --custom devour to alt magic
+     WriteSmallInteger(AddrAnimSetData+0x07*2,0x01E2) --custom devour to magic 2
      WriteSmallInteger(AddrAnimSetData+0x09*2,0x0000) --dodge to null
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
 --     WriteSmallInteger(AddrAnimSetData+0x0E*2,0x01E0) --summon changed for devour
@@ -8210,7 +8225,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
     end,
  [0x3B] --Bomb
   = function ()
-     WriteSmallInteger(AddrAnimSetData+0x07*2,0x011D) --custom devour to alt magic 1
+     WriteSmallInteger(AddrAnimSetData+0x07*2,0x011D) --custom devour to magic 2
      WriteSmallInteger(AddrAnimSetData+0x0D*2,0x0091) --attack to real attack
      WriteSmallInteger(AddrAnimSetData+0x0F*2,0x0031) --item to magic
     end,
@@ -8231,12 +8246,12 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
     end,
  [0x3D] --Ochu
   = function ()
-     WriteSmallInteger(AddrAnimSetData+0x07*2,0x0144) --custom devour to alt magic 2
-     WriteSmallInteger(AddrAnimSetData+0x0F*2,0x0144) --item to alt magic 2
+     WriteSmallInteger(AddrAnimSetData+0x07*2,0x0144) --custom devour to magic 3
+     WriteSmallInteger(AddrAnimSetData+0x0F*2,0x0144) --item to magic 3
     end,
  [0x40] --Malboro
   = function ()
-     WriteSmallInteger(AddrAnimSetData+0x07*2,0x00B6) --custom devour to alt magic 2
+     WriteSmallInteger(AddrAnimSetData+0x07*2,0x00B6) --custom devour to magic 3
     end,
  [0x41] --Iron Giant
   = function ()
@@ -8275,6 +8290,10 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
      --WriteSmallInteger(AddrAnimSetData+0x0F*2,0x002F) --item to magic, but breaks idle anim
      --WriteSmallInteger(AddrAnimSetData+0x12*2,0x0059) --victory to magic failed
     end,
+ [0x44] --Ruby Dragon
+  = function ()
+     WriteSmallInteger(AddrAnimSetData+0x07*2,0x0077) --custom devour to magic 2
+    end,
  [0x49] --Torama
   = function ()
      WriteSmallInteger(AddrAnimSetData+0x01*2,0x0022) --idle to alt idle
@@ -8302,12 +8321,12 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
      if CompCmbAltAttack[PlayerOffset+1].ItemIndex == 0 then
       IntBrothersCombo = 0xFF --Don't combo with bro
      end
-     WriteSmallInteger(AddrAnimSetData+0x07*2,0x015F) --custom devour to alt magic
+     WriteSmallInteger(AddrAnimSetData+0x07*2,0x015F) --custom devour to magic 2
      WriteSmallInteger(AddrAnimSetData+0x0D*2,0x0073) --attack to real attack
-     WriteSmallInteger(AddrAnimSetData+0x0F*2,0x015F) --item to alt magic
+     WriteSmallInteger(AddrAnimSetData+0x0F*2,0x0039) --item to magic
      WriteSmallInteger(AddrAnimSetData+0x12*2,0x0063) --victory to magic failed
      WriteBytes(AddrAnimSetData+0x174,0xFF) --Prevent prepare anim on bro, causes hang
-     WriteBytes(AddrAnimSetData+0x197,IntBrothersCombo) --Alt magic cast's enemy to combo with
+     WriteBytes(AddrAnimSetData+0x197,IntBrothersCombo) --Magic 2 Cast's model ID to combo with
     end,
  [0x4F] --Sacred
   = function ()
@@ -8315,12 +8334,12 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
      if CompCmbAltAttack[PlayerOffset+1].ItemIndex == 0 then
       IntBrothersCombo = 0xFF --Don't combo with bro
      end
-     WriteSmallInteger(AddrAnimSetData+0x07*2,0x00DD) --custom devour to alt magic
+     WriteSmallInteger(AddrAnimSetData+0x07*2,0x00DD) --custom devour to magic 2
      WriteSmallInteger(AddrAnimSetData+0x0D*2,0x0075) --attack to real attack
-     WriteSmallInteger(AddrAnimSetData+0x0F*2,0x00DD) --item to alt magic
+     WriteSmallInteger(AddrAnimSetData+0x0F*2,0x003B) --item to magic
      WriteSmallInteger(AddrAnimSetData+0x12*2,0x0065) --victory to magic failed
      WriteBytes(AddrAnimSetData+0xF2,0xFF) --Prevent prepare anim on bro, causes hang
-     WriteBytes(AddrAnimSetData+0x118,IntBrothersCombo) --Alt magic cast's enemy to combo with
+     WriteBytes(AddrAnimSetData+0x118,IntBrothersCombo) --Magic 2 Cast's model ID to combo with
     end,
  [0x51] --Cerberus
   = function ()
@@ -8342,7 +8361,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
     end,
  [0x64] --Jumbo Cactuar
   = function ()
-     WriteSmallInteger(AddrAnimSetData+0x07*2,0x0085) --custom devour to alt magic 1
+     WriteSmallInteger(AddrAnimSetData+0x07*2,0x0085) --custom devour to magic 2
      WriteSmallInteger(AddrAnimSetData+0x0D*2,0x00DF) --attack to real attack
      WriteSmallInteger(AddrAnimSetData+0x0F*2,0x0031) --item to magic
     end,
@@ -8386,7 +8405,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
       IntAltAttack = 0x0091
      end
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
-     WriteSmallInteger(AddrAnimSetData+0x0F*2,0x006B) --item to alt magic
+     WriteSmallInteger(AddrAnimSetData+0x0F*2,0x006B) --item to magic 2
     end,
 }
 
@@ -8450,6 +8469,8 @@ local StrAltAttackArray =
   = "Anacondaur:\n1 Squeeze\n2 Stab",
  [0x3B] --Bomb
   = "Bomb:\nNo alternate attacks",
+ [0x3C] --Abyss Worm
+  = "Abyss Worm:\nNo alternate attacks",
  [0x3D] --Ochu
   = "Ochu:\nNo alternate attacks",
  [0x40] --Malboro
@@ -8460,22 +8481,24 @@ local StrAltAttackArray =
   = "Behemoth: No Item\n1 Claw swipe\n2 Horn gouge",
  [0x43] --T-Rexaur
   = "T-Rexaur: No Item\n1 Bite\n2 Tail whip\n3 Biting thrash",
+ [0x44] --Ruby Dragon
+  = "Ruby Dragon: No Item\nNo alternate attacks",
  [0x49] --Torama
   = "Torama: No Item\nNo alternate attacks",
  [0x4D] --Ifrit
   = "Ifrit:\nNo alternate attacks",
  [0x4E] --Minotaur
-  = "Minotaur: Devour/Item combo\n1 No combo\n2 Combo w/ bro",
+  = "Minotaur: Devour combo\n1 No combo\n2 Combo w/ bro",
  [0x4F] --Sacred
-  = "Sacred: Devour/Item combo\n1 No combo\n2 Combo w/ bro",
+  = "Sacred: Devour combo\n1 No combo\n2 Combo w/ bro",
  [0x51] --Cerberus
   = "Cerberus:\nNo alternate attacks",
  [0x53] --Bahamut
   = "Bahamut:\n1 Wing slash\n2 Magical blast",
  [0x64] --Jumbo Cactuar
   = "Jumbo Cactuar:\nNo alternate attacks",
- [0x89] --Ultimecia Final
-  = "Ultimecia Final: No Item\nNo alternate attacks",
+ [0x89] --Ultimecia
+  = "Ultimecia: No Item\nNo alternate attacks",
  [0x92] --Red Giant
   = "Red Giant:\n1 Vertical slice\n2 Horizontal slice\n3 Punch",
  [0x94] --Tiamat
