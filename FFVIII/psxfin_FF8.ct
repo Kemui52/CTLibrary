@@ -1280,7 +1280,7 @@
           <Options moManualExpandCollapse="1"/>
           <ShowAsHex>1</ShowAsHex>
           <VariableType>4 Bytes</VariableType>
-          <Address>+169C40</Address>
+          <Address>+167A94</Address>
           <CheatEntries>
             <CheatEntry>
               <ID>1410</ID>
@@ -7714,13 +7714,16 @@ Most other codes found by folks on GameHacking.org
 ---
 ---(personal notes)
 ---
-A7 04 jump to AnimSet 04?
+A7 XX jump to AnimSet xx
 C3 0B branch for alt idle? changing 0B to 00 means always alt
-BB display attack name
-AA execute damage?
+BB display attack name?
+ 04 green magic FX? (is it part of A5?)
+ 00 devour/special prepare FX???
+AA execute damage
 A5 play magic prepare FX
-04 green magic FX
-00 devour/special prepare FX
+E6 XX relative jump to xx
+9D set death flag on self?
+Low numbers mean play that anim segment?
 ---
 Gained strength: (t-rexaur)
 Nice &amp; crunchy!
@@ -8201,12 +8204,23 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
                      0x04D0,}
      local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
      if IntAltAttack == nil then
-      IntAltAttack = 0x04D0
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
      end
      WriteSmallInteger(AddrAnimSetData+0x09*2,0x0000) --dodge to null
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
 --     WriteSmallInteger(AddrAnimSetData+0x0E*2,0x0086) --summon changed for devour
      WriteSmallInteger(AddrAnimSetData+0x0F*2,0x0088) --item to magic
+    end,
+ [0x1D] --Snow Lion
+  = function ()
+     local ArrayAltAttack = {
+                     0x0184,
+                     0x0253,}
+     local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
+     if IntAltAttack == nil then
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
+     end
+     WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
     end,
  [0x1E] --Anacondaur
   = function ()
@@ -8215,7 +8229,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
                      0x0165,}
      local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
      if IntAltAttack == nil then
-      IntAltAttack = 0x0165
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
      end
      WriteSmallInteger(AddrAnimSetData+0x07*2,0x01E2) --custom devour to magic 2
      WriteSmallInteger(AddrAnimSetData+0x09*2,0x0000) --dodge to null
@@ -8260,7 +8274,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
                      0x010E,}
      local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
      if IntAltAttack == nil then
-      IntAltAttack = 0x010E
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
      end
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
     end,
@@ -8271,7 +8285,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
                      0x010D,}
      local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
      if IntAltAttack == nil then
-      IntAltAttack = 0x008F
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
      end
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
     end,
@@ -8283,7 +8297,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
                      0x01F4,}
      local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
      if IntAltAttack == nil then
-      IntAltAttack = 0x01F4
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
      end
      --WriteSmallInteger(AddrAnimSetData+0x00*2,0x000F) --Plus one to anim count
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
@@ -8353,11 +8367,18 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
                      0x0197,}
      local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
      if IntAltAttack == nil then
-      IntAltAttack = 0x0197
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
      end
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
      WriteSmallInteger(AddrAnimSetData+0x0F*2,0x003D) --item to magic
      WriteSmallInteger(AddrAnimSetData+0x12*2,0x0066) --victory to magic failed
+    end,
+ [0x56] --Odin
+  = function ()
+     WriteSmallInteger(AddrAnimSetData+0x0A*2,0x0084) --magic failed to idle?
+     WriteSmallInteger(AddrAnimSetData+0x0B*2,0x0036) --magic to real magic
+     WriteBytes(AddrAnimSetData+0x87,0xBB) --removes death flag 9D from 'attack'
+     WriteBytes(AddrAnimSetData+0x8A,0x02,0x02,0x02,0xA7,0x01) --manually repeat end of 'attack' anim and jump to idle
     end,
  [0x64] --Jumbo Cactuar
   = function ()
@@ -8378,7 +8399,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
                      0x0159,}
      local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
      if IntAltAttack == nil then
-      IntAltAttack = 0x010C
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
      end
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
      WriteSmallInteger(AddrAnimSetData+0x0F*2,0x0033) --item to magic
@@ -8390,7 +8411,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
                      0x0184,}
      local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
      if IntAltAttack == nil then
-      IntAltAttack = 0x0184
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
      end
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
      WriteSmallInteger(AddrAnimSetData+0x0F*2,0x0031) --item to magic
@@ -8402,7 +8423,7 @@ local FuncAnimSetFix = --Array of functions that make AnimSet changes.
                      0x00C0,}
      local IntAltAttack = ArrayAltAttack[CompCmbAltAttack[PlayerOffset+1].ItemIndex+1]
      if IntAltAttack == nil then
-      IntAltAttack = 0x0091
+      IntAltAttack = ArrayAltAttack[#ArrayAltAttack]
      end
      WriteSmallInteger(AddrAnimSetData+0x0D*2,IntAltAttack) --attack to alt attack
      WriteSmallInteger(AddrAnimSetData+0x0F*2,0x006B) --item to magic 2
@@ -8465,6 +8486,8 @@ local StrAltAttackArray =
   = "Dummy: No Item\nNO PHYSICAL\nATTACKS!!!",
  [0x19] --Mesmerize
   = "Mesmerize:\n1 Slice\n2 Kick\n3 Headbash",
+ [0x1D] --Snow Lion
+  = "Snow Lion: No Item\n1 Bodyblow\n2 Tail whip",
  [0x1E] --Anacondaur
   = "Anacondaur:\n1 Squeeze\n2 Stab",
  [0x3B] --Bomb
@@ -8495,6 +8518,8 @@ local StrAltAttackArray =
   = "Cerberus:\nNo alternate attacks",
  [0x53] --Bahamut
   = "Bahamut:\n1 Wing slash\n2 Magical blast",
+ [0x56] --Odin
+  = "Odin: No Item\nNo alternate attacks",
  [0x64] --Jumbo Cactuar
   = "Jumbo Cactuar:\nNo alternate attacks",
  [0x89] --Ultimecia
