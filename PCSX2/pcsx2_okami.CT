@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>1337192579</ID>
+      <Description>"Size Modifier Script"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+{$lua}
+--Simple size mod plus collision size, by Kemui52.
+local f = createForm( true )
+f.setCaption("Host for Size Modifier")
+local t = createTimer( f, true )
+timer_setInterval( t, 300 )
+local InitialDelay = 0
+
+local DesiredSize = 1.5
+local DesiredCollision = 13.5 --16 for 2x, 13.5 for 1.5x
+
+timer_onTimer( t, function( )
+if InitialDelay == 1 then
+ f.show() --Editing in auto assembler force-closes my window, so I bring it back up on loop.
+ InitialDelay = 23
+else
+ InitialDelay = InitialDelay + 1
+end
+
+local AmmyPointer = GetAddressSafe("[eemem]+67E7A8")
+if AmmyPointer == nil then return end
+local AmmyPointerVal = readInteger(AmmyPointer)
+if AmmyPointerVal &lt; 0x700000 or AmmyPointerVal &gt; 0x3000000 then --Making sure it's a valid range. These values are a wild guess.
+ return
+end
+
+local AmmyPointerResult = AmmyPointerVal+GetAddress("[eemem]") --GetAddress("[[eemem]+67E7A8]+[eemem]") --This commented code works, but I wanted to try doing it manually.
+local AmmySizeX = AmmyPointerResult+0xB0
+local AmmySizeY = AmmyPointerResult+0xB4
+local AmmySizeZ = AmmyPointerResult+0xB8
+local AmmyCollision = AmmyPointerResult+0x2C8
+
+local AmmySizeXVal = readFloat(AmmySizeX)
+local AmmySizeYVal = readFloat(AmmySizeY)
+local AmmySizeZVal = readFloat(AmmySizeZ)
+local AmmyCollisionVal = readFloat(AmmyCollision)
+
+if AmmySizeXVal == 1.0 then
+ writeFloat(AmmySizeX,DesiredSize)
+ writeFloat(AmmySizeY,DesiredSize)
+ writeFloat(AmmySizeZ,DesiredSize)
+ if AmmyCollisionVal == 11.0 then
+  writeFloat(AmmyCollision,DesiredCollision)
+ end
+end
+
+end );
+
+{$asm}
+[DISABLE]
+
+
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192581</ID>
+      <Description>"Amaterasu Object Pointer"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>[[eemem]+67E7A8]+[eemem]</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>4</ID>
+          <Description>"Size X"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+B0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"Size Y"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+B4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>6</ID>
+          <Description>"Size Z"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+B8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>12</ID>
+          <Description>"Collision Radius"</Description>
+          <DropDownList DisplayValueAsItem="1">11:Normal
+13.5:Size 1.5x
+16:Size 2x
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+2C8</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>11</ID>
+      <Description>"speed 3fa40000?"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>[eemem]+415EF0</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"speed 1000?"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>2 Bytes</VariableType>
+      <Address>[eemem]+36C83A</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192580</ID>
+      <Description>"No description"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>[eemem]+67E7A8</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>
