@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>356891</ID>
+      <Description>"Scan for Player Settings"</Description>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript Async="1">{  Game Executable   : Pawperty Damage.exe
+   Author            : Kemui52
+   Executable Version: Steam 1.5.0
+   Script Date       : 2024-02-12
+}
+[ENABLE]
+{$lua}
+BFplayersettings = AOBScanUnique("00 00 00 00 00 00 80 3F 00 00 00 00 00 00 70 41 CD CC 4C 3D 00 00 00 3F 00 00 C8 41 CD CC CC 3D 00 00 80 3F 00 00 20 42 CD CC 4C 3E 00 00 80 3F CD CC CC 3D 00 00 C0 3F 9A 99 59 3F 9A 99 59 3F CD CC AC 3F 00 00 E0 3F 00 00 40 40 00 00 20 40 * * * * * * * * 9A 99 99 3F 0A D7 23 3D CD CC CC 3D 9A 99 99 3E 00 00 00 00 00 00 00 00","+W-C-X",2,8)
+--WriteBytes(GetAddressSafe(BFplayersettings+0xA0),0x80,0x4F,0xC3,0x47)
+--The BF stands for brute forced.
+
+{$asm}
+[DISABLE]
+{$lua}
+--WriteBytes(GetAddressSafe(actionposeCD+0xF),0x00,0x00,0x10,0x41)
+--BFplayersettings = nil
+
+
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>356902</ID>
+          <Description>"Damage Scale"</Description>
+          <DropDownList DisplayValueAsItem="1">0:Normal Min
+1:Default
+5:Normal Max
+750:CRUSH!!!
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>BFplayersettings+A0</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>356901</ID>
+      <Description>"Player Settings"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>BFplayersettings+A0</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>72</ID>
+          <Description>"Damage Scale"</Description>
+          <DropDownList DisplayValueAsItem="1">0:Normal Min
+1:Default
+5:Normal Max
+750:CRUSH!!!
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>74</ID>
+          <Description>"Damage Shake"</Description>
+          <DropDownList DisplayValueAsItem="1">0.0002399999939:damage 750 nerf
+0.001000000047:step 150 nerf
+0.03999999911:Default
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>-44</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>73</ID>
+          <Description>"Step Shake"</Description>
+          <DropDownList DisplayValueAsItem="1">0.07999999821:step 150 nerf
+2.5:Default
+400:damage 750 unnerf
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>-54</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>71</ID>
+          <Description>"Step Damage"</Description>
+          <DropDownList DisplayValueAsItem="1">3:Default
+150:x50
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>-58</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>65</ID>
+          <Description>"Current Size"</Description>
+          <Color>808080</Color>
+          <VariableType>Float</VariableType>
+          <Address>+48</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"Goal Size"</Description>
+          <VariableType>Float</VariableType>
+          <Address>+50</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>64</ID>
+          <Description>"Growth Rate (Setting)"</Description>
+          <DropDownList DisplayValueAsItem="1">0:Normal Min
+10:Normal Max
+</DropDownList>
+          <VariableType>Float</VariableType>
+          <Address>+80</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>66</ID>
+          <Description>"Movement X"</Description>
+          <VariableType>Float</VariableType>
+          <Address>+84</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>67</ID>
+          <Description>"Movement Y"</Description>
+          <VariableType>Float</VariableType>
+          <Address>+88</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>356899</ID>
+      <Description>"Always in Action Pose"</Description>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript Async="1">{  Game Executable   : Pawperty Damage.exe
+   Author            : Kemui52
+   Executable Version: Steam 1.5.0
+   Script Date       : 2024-02-12
+}
+[ENABLE]
+//aobscanmodule(actionposeCD,GameAssembly.dll,03 01 48 8B BB * 01 00 00 C7 83 * 01 00 00 00 00 10 41 48 8B 15)
+//registersymbol(actionposeCD)
+//label(actionposeCD)
+//mov [rbx+000001BC],47C34F80   //80 4F C3 47
+{$lua}
+actionposeCD = AOBScanModuleUnique("GameAssembly.dll","03 01 48 8B BB * 01 00 00 C7 83 * 01 00 00 00 00 10 41 48 8B 15")
+WriteBytes(GetAddressSafe(actionposeCD+0xF),0x80,0x4F,0xC3,0x47)
+
+{$asm}
+[DISABLE]
+//actionposeCD+F:
+//00 00 10 41
+//mov [rbx+000001BC],41100000
+//unregistersymbol(actionposeCD)
+{$lua}
+WriteBytes(GetAddressSafe(actionposeCD+0xF),0x00,0x00,0x10,0x41)
+
+
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>356900</ID>
+          <Description>"Countdown When Attacking"</Description>
+          <DropDownListLink>ActionPoseCountdown</DropDownListLink>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>actionposeCD+F</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>83</ID>
+      <Description>"Values"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <Color>C0C0C0</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>84</ID>
+          <Description>"ActionPoseCountdown"</Description>
+          <DropDownList DisplayValueAsItem="1">99999:Basically Infinite
+999999:Countdown Gets Stuck?
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols>
+    <SymbolEntry>
+      <Name>chkAmmoAfterFireAOB</Name>
+      <Address>7FF70CDA0D36</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>chkAmmoAfterFireAOB1</Name>
+      <Address>7FF70CDA0D36</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>chkAmmoAfterFireAOB2</Name>
+      <Address>7FF70CD9ECFC</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>chkAmmoAfterFireAOB3</Name>
+      <Address>7FF70CD9FC3A</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>healthWrite1cAOB</Name>
+      <Address>7FF70CD1ED5E</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>fMinHealth</Name>
+      <Address>7FF70CA3006B</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>ammoChkMaxOnReloadAOB</Name>
+      <Address>7FF70CD9F1B6</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>energyWrite1OnUseAOB</Name>
+      <Address>7FF70CD36065</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>WeaponData</Name>
+      <Address>7FF70CA0001C</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>CurWeapAOB</Name>
+      <Address>7FF70CE952FF</Address>
+    </SymbolEntry>
+  </UserdefinedSymbols>
+  <Comments>Basic instructions:
+1. set Damage Scale to 750 to one-shot everything.
+2. set Damage Shake to "damage 750 nerf" to fix the extreme screen shake.
+3. set Step Shake to "damage 750 unnerf" to fix the footsteps having no shake at all.
+4. that's all! Mess with other stuff if you want.
+--
+dontstopmenow - disable all collisions
+bethekaiju - first-person view
+--
+Notes:
+--
+Action pose counts down. Greater than 0, pose is active. Less than 0, you're standing upright. Stops counting below zero, will not reset to zero.
+--
+Cheats are aligned to 4; last digit is 4. Don't forget UTF-16.
+</Comments>
+</CheatTable>
