@@ -8,7 +8,7 @@
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript Async="1">{  Game Executable   : Pawperty Damage.exe
    Author            : Kemui52
-   Executable Version: Steam 1.5.0
+   Executable Version: Steam 1.5.1
    Script Date       : 2024-02-12
 }
 [ENABLE]
@@ -130,12 +130,12 @@ BFplayersettings = AOBScanUnique("00 00 00 00 00 00 80 3F 00 00 00 00 00 00 70 4
     </CheatEntry>
     <CheatEntry>
       <ID>356899</ID>
-      <Description>"Always in Action Pose"</Description>
+      <Description>"Always in Aggressive Stance"</Description>
       <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript Async="1">{  Game Executable   : Pawperty Damage.exe
    Author            : Kemui52
-   Executable Version: Steam 1.5.0
+   Executable Version: Steam 1.5.1
    Script Date       : 2024-02-12
 }
 [ENABLE]
