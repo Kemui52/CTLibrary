@@ -2,79 +2,90 @@
 <CheatTable CheatEngineTableVersion="45">
   <CheatEntries>
     <CheatEntry>
-      <ID>1</ID>
-      <Description>"P1 Characters"</Description>
-      <DropDownList DisplayValueAsItem="1">FFFF:Have All
-</DropDownList>
+      <ID>1337192761</ID>
+      <Description>"P1 Misc."</Description>
+      <Options moManualExpandCollapse="1"/>
       <ShowAsHex>1</ShowAsHex>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>2 Bytes</VariableType>
-      <Address>[eemem]+221EF8</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>1337192616</ID>
-      <Description>"P1 Color"</Description>
-      <DropDownList DisplayValueAsItem="1">00:Yellow
+      <VariableType>4 Bytes</VariableType>
+      <Address>[eemem]</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1</ID>
+          <Description>"Unlocked Characters"</Description>
+          <DropDownList DisplayValueAsItem="1">FFFF:Have All
+</DropDownList>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>[eemem]+221EF8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192616</ID>
+          <Description>"Color"</Description>
+          <DropDownList DisplayValueAsItem="1">00:Yellow
 01:Blue
 02:Red
 03:Green
 </DropDownList>
-      <ShowAsHex>1</ShowAsHex>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>Byte</VariableType>
-      <Address>[eemem]+221554</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>1337192619</ID>
-      <Description>"P1 Costume Pointer"</Description>
-      <DropDownList DisplayValueAsItem="1">00000000:None
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>[eemem]+221554</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192619</ID>
+          <Description>"Costume Pointer"</Description>
+          <DropDownList DisplayValueAsItem="1">00000000:None
 00221308:Warrior - Rat
 0022129C:Valkyrie - Cheerleader
 00221278:Valkyrie - Schoolgirl
 00221398:Wizard - Green Alien
 00221158:Knight - Waitress
 </DropDownList>
-      <ShowAsHex>1</ShowAsHex>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>4 Bytes</VariableType>
-      <Address>[eemem]+221654</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>1337192620</ID>
-      <Description>"P1 Char/Costume String"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <Color>808080</Color>
-      <VariableType>String</VariableType>
-      <Length>7</Length>
-      <Unicode>0</Unicode>
-      <CodePage>0</CodePage>
-      <ZeroTerminate>1</ZeroTerminate>
-      <Address>[eemem]+221BE8</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>2</ID>
-      <Description>"P1 Current Health"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>Float</VariableType>
-      <Address>[eemem]+222F60</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>5</ID>
-      <Description>"P1 Gold"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>2 Bytes</VariableType>
-      <Address>[eemem]+222F70</Address>
-    </CheatEntry>
-    <CheatEntry>
-      <ID>1337192618</ID>
-      <Description>"P1 Name"</Description>
-      <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>String</VariableType>
-      <Length>6</Length>
-      <Unicode>0</Unicode>
-      <CodePage>0</CodePage>
-      <ZeroTerminate>1</ZeroTerminate>
-      <Address>[eemem]+221EEC</Address>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>[eemem]+221654</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192620</ID>
+          <Description>"Char/Costume String"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>808080</Color>
+          <VariableType>String</VariableType>
+          <Length>7</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>[eemem]+221BE8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>2</ID>
+          <Description>"Current Health"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>[eemem]+222F60</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>5</ID>
+          <Description>"Gold"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>[eemem]+222F70</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192618</ID>
+          <Description>"Name"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>String</VariableType>
+          <Length>6</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>[eemem]+221EEC</Address>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
       <ID>1337192617</ID>
@@ -146,6 +157,8 @@ end );
           <ID>17</ID>
           <Description>"Growth Potion Size"</Description>
           <DropDownList DisplayValueAsItem="1">1.299999952:Default
+1.600000024:Ogre Size
+2:Big
 ??:scan invalid
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
@@ -156,6 +169,75 @@ end );
     </CheatEntry>
     <CheatEntry>
       <ID>1337192629</ID>
+      <Description>"Ogre Size Scan"</Description>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript>[ENABLE]
+{$lua}
+--Scan PCSX2 recompiled assembly for size code, by Kemui52.
+local f = createForm( true )
+f.setCaption("Host for Ogre Size Scanner")
+local t = createTimer( f, true )
+timer_setInterval( t, 300 )
+local InitialDelay = 0
+
+local DesiredSize = 2.0
+
+local FoundAddress = false
+timer_onTimer( t, function( )
+if FoundAddress == true then
+ local labelSuccess = createLabel(f)
+ labelSuccess.Caption = "Successfully changed size!\nScan halted."
+ labelSuccess.Top = 20
+ labelSuccess.Left = 20
+ timer_setEnabled(t, false)
+ return
+end
+
+if InitialDelay == 1 then
+ f.show() --Editing in auto assembler force-closes my window, so I bring it back up on loop.
+ InitialDelay = 10
+ return
+elseif InitialDelay &gt;= 17 then
+ InitialDelay = 10
+else
+ InitialDelay = InitialDelay + 1
+ return --The scan takes a bit, so only do it every so often.
+end
+
+
+addrOgreSize = AOBScanUnique("81 C1 80 00 00 00 48 63 5C 0D 00 BE CD CC CC 3F 66 0F 6E C6 F3 0F 11 05","+W-C+X")
+if addrOgreSize == nil then return end
+
+local valOgreSize = readInteger(addrOgreSize+0xC)
+if valOgreSize == 0x3FCCCCCD then
+ writeFloat(addrOgreSize+0xC,DesiredSize)
+ FoundAddress = true
+end
+
+end );
+
+{$asm}
+[DISABLE]
+
+
+</AssemblerScript>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1337192630</ID>
+          <Description>"Ogre Size Override"</Description>
+          <DropDownList DisplayValueAsItem="1">1.600000024:Default
+2.079999924:Would-be Growth Potion Size
+2.480000019:Big
+??:scan invalid
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>addrOgreSize+C</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192739</ID>
       <Description>"Shrink Enemy Scan"</Description>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript>[ENABLE]
@@ -167,7 +249,7 @@ local t = createTimer( f, true )
 timer_setInterval( t, 300 )
 local InitialDelay = 0
 
-local DesiredSize = 0.9
+local DesiredSize = 0.99
 
 local FoundAddress = false
 timer_onTimer( t, function( )
@@ -210,9 +292,11 @@ end );
 </AssemblerScript>
       <CheatEntries>
         <CheatEntry>
-          <ID>1337192630</ID>
+          <ID>1337192740</ID>
           <Description>"Shrink Enemy Size"</Description>
-          <DropDownList DisplayValueAsItem="1">1.299999952:Default
+          <DropDownList DisplayValueAsItem="1">0.5:Mini
+0.6669999957:Default
+0.9900000095:Almost Normal Size
 ??:scan invalid
 </DropDownList>
           <ShowAsSigned>0</ShowAsSigned>
@@ -248,6 +332,18 @@ end );
               <Color>808080</Color>
               <VariableType>Binary</VariableType>
               <BitStart>0</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192738</ID>
+              <Description>"Damage Absorb"</Description>
+              <DropDownListLink>BOOLEAN</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <Color>808080</Color>
+              <VariableType>Binary</VariableType>
+              <BitStart>4</BitStart>
               <BitLength>1</BitLength>
               <ShowAsBinary>0</ShowAsBinary>
               <Address>+6</Address>
@@ -298,6 +394,7 @@ end );
             <CheatEntry>
               <ID>12</ID>
               <Description>"Function Type"</Description>
+              <DropDownListLink>ItemType</DropDownListLink>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -306,6 +403,7 @@ end );
             <CheatEntry>
               <ID>1337192589</ID>
               <Description>"Variable"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Float</VariableType>
               <Address>+8</Address>
@@ -341,6 +439,7 @@ end );
             <CheatEntry>
               <ID>1337192586</ID>
               <Description>"Function Type"</Description>
+              <DropDownListLink>ItemType</DropDownListLink>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -349,6 +448,7 @@ end );
             <CheatEntry>
               <ID>1337192588</ID>
               <Description>"Variable"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Float</VariableType>
               <Address>+8</Address>
@@ -384,6 +484,7 @@ end );
             <CheatEntry>
               <ID>1337192626</ID>
               <Description>"Function Type"</Description>
+              <DropDownListLink>ItemType</DropDownListLink>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -392,6 +493,7 @@ end );
             <CheatEntry>
               <ID>1337192627</ID>
               <Description>"Variable"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Float</VariableType>
               <Address>+8</Address>
@@ -408,13 +510,148 @@ end );
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
-          <ID>1337192631</ID>
-          <Description>"Slot 8"</Description>
+          <ID>1337192751</ID>
+          <Description>"Slot 4"</Description>
           <Options moManualExpandCollapse="1"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
-          <Address>+14+10*7</Address>
+          <Address>+14+10*3</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192752</ID>
+              <Description>"Time"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192753</ID>
+              <Description>"Function Type"</Description>
+              <DropDownListLink>ItemType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192754</ID>
+              <Description>"Variable"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192755</ID>
+              <Description>"ID Flag"</Description>
+              <DropDownListLink>ItemIDFlags</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192756</ID>
+          <Description>"Slot 5"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+14+10*4</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192757</ID>
+              <Description>"Time"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192758</ID>
+              <Description>"Function Type"</Description>
+              <DropDownListLink>ItemType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192759</ID>
+              <Description>"Variable"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192760</ID>
+              <Description>"ID Flag"</Description>
+              <DropDownListLink>ItemIDFlags</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192746</ID>
+          <Description>"Slot 6"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+14+10*5</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192747</ID>
+              <Description>"Time"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192748</ID>
+              <Description>"Function Type"</Description>
+              <DropDownListLink>ItemType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192749</ID>
+              <Description>"Variable"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192750</ID>
+              <Description>"ID Flag"</Description>
+              <DropDownListLink>ItemIDFlags</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192631</ID>
+          <Description>"Slot 7"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+14+10*6</Address>
           <CheatEntries>
             <CheatEntry>
               <ID>1337192632</ID>
@@ -427,6 +664,7 @@ end );
             <CheatEntry>
               <ID>1337192633</ID>
               <Description>"Function Type"</Description>
+              <DropDownListLink>ItemType</DropDownListLink>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -435,6 +673,7 @@ end );
             <CheatEntry>
               <ID>1337192634</ID>
               <Description>"Variable"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Float</VariableType>
               <Address>+8</Address>
@@ -447,6 +686,478 @@ end );
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+C</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192741</ID>
+          <Description>"Slot 8"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+14+10*7</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192742</ID>
+              <Description>"Time"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192743</ID>
+              <Description>"Function Type"</Description>
+              <DropDownListLink>ItemType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192744</ID>
+              <Description>"Variable"</Description>
+              <DropDownListLink>ItemTime</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192745</ID>
+              <Description>"ID Flag"</Description>
+              <DropDownListLink>ItemIDFlags</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192762</ID>
+      <Description>"P1 Progression"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>[eemem]+22225C</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1337192763</ID>
+          <Description>"Jackal?"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+B4*A</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192776</ID>
+              <Description>"Golden Fangs"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192773</ID>
+              <Description>"Golden Feathers"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192774</ID>
+              <Description>"Golden Claws"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192771</ID>
+              <Description>"--- Crystals ---"</Description>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192770</ID>
+              <Description>"Orange"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192775</ID>
+              <Description>"Red"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192764</ID>
+              <Description>"Purple"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192768</ID>
+              <Description>"Blue"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192769</ID>
+              <Description>"Green"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192766</ID>
+              <Description>"Yellow"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192767</ID>
+              <Description>"Silver"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192772</ID>
+              <Description>"Black"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+E</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192790</ID>
+          <Description>"Tigress?"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+B4*B</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192791</ID>
+              <Description>"Golden Fangs"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192792</ID>
+              <Description>"Golden Feathers"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192793</ID>
+              <Description>"Golden Claws"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192794</ID>
+              <Description>"--- Crystals ---"</Description>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192795</ID>
+              <Description>"Orange"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192796</ID>
+              <Description>"Red"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192797</ID>
+              <Description>"Purple"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192798</ID>
+              <Description>"Blue"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192799</ID>
+              <Description>"Green"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192800</ID>
+              <Description>"Yellow"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192801</ID>
+              <Description>"Silver"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192802</ID>
+              <Description>"Black"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+E</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192777</ID>
+          <Description>"Ogre"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+B4*C</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192778</ID>
+              <Description>"Golden Fangs"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192779</ID>
+              <Description>"Golden Feathers"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192780</ID>
+              <Description>"Golden Claws"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192781</ID>
+              <Description>"--- Crystals ---"</Description>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192782</ID>
+              <Description>"Orange"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192783</ID>
+              <Description>"Red"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192784</ID>
+              <Description>"Purple"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192785</ID>
+              <Description>"Blue"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192786</ID>
+              <Description>"Green"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192787</ID>
+              <Description>"Yellow"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192788</ID>
+              <Description>"Silver"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192789</ID>
+              <Description>"Black"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+E</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192803</ID>
+          <Description>"Unicorn?"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+B4*D</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>1337192804</ID>
+              <Description>"Golden Fangs"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192805</ID>
+              <Description>"Golden Feathers"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192806</ID>
+              <Description>"Golden Claws"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>-4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192807</ID>
+              <Description>"--- Crystals ---"</Description>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192808</ID>
+              <Description>"Orange"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192809</ID>
+              <Description>"Red"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192810</ID>
+              <Description>"Purple"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192811</ID>
+              <Description>"Blue"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192812</ID>
+              <Description>"Green"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192813</ID>
+              <Description>"Yellow"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192814</ID>
+              <Description>"Silver"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>1337192815</ID>
+              <Description>"Black"</Description>
+              <DropDownListLink>CrystalAmounts</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+E</Address>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -1325,18 +2036,90 @@ end );
     <CheatEntry>
       <ID>6</ID>
       <Description>"P1 Strength"</Description>
+      <Options moManualExpandCollapse="1"/>
       <ShowAsSigned>0</ShowAsSigned>
-      <Color>808080</Color>
       <VariableType>Float</VariableType>
       <Address>[eemem]+221658</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1337192730</ID>
+          <Description>"Derivative"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>808080</Color>
+          <VariableType>Float</VariableType>
+          <Address>+10</Address>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
-      <ID>8</ID>
-      <Description>"P1 Strength Buff"</Description>
+      <ID>1337192729</ID>
+      <Description>"P1 Armor"</Description>
+      <Options moManualExpandCollapse="1"/>
       <ShowAsSigned>0</ShowAsSigned>
-      <Color>808080</Color>
       <VariableType>Float</VariableType>
-      <Address>[eemem]+223050</Address>
+      <Address>[eemem]+22165C</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1337192733</ID>
+          <Description>"Derivative"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>808080</Color>
+          <VariableType>Float</VariableType>
+          <Address>+10</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192728</ID>
+      <Description>"P1 Magic"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>[eemem]+221660</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1337192732</ID>
+          <Description>"Derivative 1"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>808080</Color>
+          <VariableType>Float</VariableType>
+          <Address>+10</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192735</ID>
+          <Description>"Derivative 2"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>808080</Color>
+          <VariableType>Float</VariableType>
+          <Address>+18</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192734</ID>
+          <Description>"Derivative 3"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>808080</Color>
+          <VariableType>Float</VariableType>
+          <Address>+1C</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>1337192727</ID>
+      <Description>"P1 Speed"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>[eemem]+221664</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>1337192731</ID>
+          <Description>"Derivative"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>808080</Color>
+          <VariableType>Float</VariableType>
+          <Address>+10</Address>
+        </CheatEntry>
+      </CheatEntries>
     </CheatEntry>
     <CheatEntry>
       <ID>10083</ID>
@@ -1353,6 +2136,22 @@ end );
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
+          <ID>1337192737</ID>
+          <Description>"ItemType"</Description>
+          <DropDownList>00000009:
+00000006:
+00000005:
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>1337192621</ID>
+          <Description>"ItemTime"</Description>
+          <DropDownList DisplayValueAsItem="1">-1.299999952:Infinite
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
           <ID>1337192583</ID>
           <Description>"ItemIDFlags"</Description>
           <DropDownList DisplayValueAsItem="1">00000100:Growth Potion (9)
@@ -1361,14 +2160,16 @@ end );
 00000400:Pojo the Chicken (9)
 00000080:Phoenix Familiar (9)
 00010000:Invulnerability (6)
-00100000:Super Shot (5)
+00110000:Golden Invuln. (6)
+00100000:Super Shot (5)/Damage Absorb (6)
+10000000:Hammer (5)
 </DropDownList>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
-          <ID>1337192621</ID>
-          <Description>"ItemTime"</Description>
-          <DropDownList DisplayValueAsItem="1">-1.299999952:Infinite
+          <ID>1337192765</ID>
+          <Description>"CrystalAmounts"</Description>
+          <DropDownList DisplayValueAsItem="1">65535:Met goal
 </DropDownList>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
