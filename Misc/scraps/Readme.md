@@ -4,4 +4,9 @@ Typically for tables that are very rough and inconvenient to use, but some cool 
 
 ## Nintendo DS: Advance Wars Dual Strike
 
-My scratch pad for figuring out how to quickfix things with the Sturm mod for Dual Strike.
+My scratch pad for dissecting how certain things work in the Sturm mod for Dual Strike.
+
+
+## SNES: Super Famicom Wars
+
+Research toward custom map creation.

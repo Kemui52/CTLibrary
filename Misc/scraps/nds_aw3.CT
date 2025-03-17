@@ -2,12 +2,30 @@
 <CheatTable CheatEngineTableVersion="45">
   <CheatEntries>
     <CheatEntry>
+      <ID>356891</ID>
+      <Description>"Scan for RAM Start"</Description>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript Async="1">[ENABLE]
+{$lua}
+--Found on MelonDS 1.0 RC. Dunno if that matters.
+addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
+
+{$asm}
+[DISABLE]
+{$lua}
+--addrRAMStart = nil
+
+
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
       <ID>2</ID>
       <Description>"Shop Funds"</Description>
       <Options moManualExpandCollapse="1"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
-      <Address>202FCDF0718</Address>
+      <Address>addrRAMStart+290718</Address>
       <CheatEntries>
         <CheatEntry>
           <ID>10273</ID>
@@ -875,6 +893,291 @@
           <Address>+C054</Address>
         </CheatEntry>
         <CheatEntry>
+          <ID>10278</ID>
+          <Description>"Map Tile Types"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>808080</Color>
+          <VariableType>Array of byte</VariableType>
+          <ByteLength>4</ByteLength>
+          <Address>-10B628</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>10279</ID>
+              <Description>"1, 1"</Description>
+              <DropDownList DisplayValueAsItem="1">01:Plain
+02:River
+07:Sea
+</DropDownList>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <Color>808080</Color>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10280</ID>
+          <Description>"Map Tileset"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Array of byte</VariableType>
+          <ByteLength>4</ByteLength>
+          <Address>-10C038</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>10281</ID>
+              <Description>"1, 1"</Description>
+              <DropDownList DisplayValueAsItem="1">0001:Plain
+0004:Plain 2
+0122:Destroyed Seam Hori
+0123:Destroyed Seam Vert
+0021:Plain Forest-Edge
+002A:Sea Center
+0040:Road Vert
+0060:Road Hori
+0041:Road Corner NW
+0042:Road Corner NE
+0060:Road Corner SW
+0062:Road Corner SE
+0018:River Vert
+0039:River Hori
+001B:River 4-Way
+0058:River Corner NW
+0059:River Corner NE
+0078:River Corner SW
+007B:River Corner SE
+009D:River 3-Way W
+00DA:River 3-Way E
+0118:River 3-Way S
+011A:River 3-Way N
+0182:Minicannon S
+0183:Minicannon N
+0184:Minicannon W
+0185:Minicannon E
+0187:Black Cannon S 2,2 - 3x3
+018A:Black Cannon N 2,2 - 3x3
+018D:Black Obelisk 2,2 - 3x3
+0193:Deathray 2,2 - 3x3
+01A0:Silo Used
+01A1:Black Crystal
+01A2:Volcano 2,3 - 4x4
+01A3:Volcano 2,3 - 4x4
+01A4:INVENTION FILLER TILE
+01A9:Volcano 2,3 - 4x4
+01AB:Giant Missile 2,3 - 4x4
+01AF:Black Fortress 2,3 - 4x4
+01C0:Neutral HQ
+01D9:Lab Neutral
+01DA:Lab OS
+01DB:Lab BM
+01DC:Lab GE
+01DD:Lab YC
+</DropDownList>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356912</ID>
+          <Description>"Player Data"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>356892</ID>
+              <Description>"P1 Controller"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <DropDownListLink>ControllerType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>-1073FE+98*0</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356894</ID>
+                  <Description>"Faction Colour"</Description>
+                  <DropDownListLink>FactionColour</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>-1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356896</ID>
+                  <Description>"Team"</Description>
+                  <DropDownListLink>TeamType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+12</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356898</ID>
+                  <Description>"AI"</Description>
+                  <DropDownListLink>AIType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+14</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356913</ID>
+                  <Description>"Current G"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>-1A</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356900</ID>
+              <Description>"P2 Controller"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <DropDownListLink>ControllerType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>-1073FE+98*1</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356901</ID>
+                  <Description>"Faction Colour"</Description>
+                  <DropDownListLink>FactionColour</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>-1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356902</ID>
+                  <Description>"Team"</Description>
+                  <DropDownListLink>TeamType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+12</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356903</ID>
+                  <Description>"AI"</Description>
+                  <DropDownListLink>AIType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+14</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356914</ID>
+                  <Description>"Current G"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>-1A</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356908</ID>
+              <Description>"P3 Controller"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <DropDownListLink>ControllerType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>-1073FE+98*2</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356909</ID>
+                  <Description>"Faction Colour"</Description>
+                  <DropDownListLink>FactionColour</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>-1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356910</ID>
+                  <Description>"Team"</Description>
+                  <DropDownListLink>TeamType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+12</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356911</ID>
+                  <Description>"AI"</Description>
+                  <DropDownListLink>AIType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+14</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356915</ID>
+                  <Description>"Current G"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>-1A</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356904</ID>
+              <Description>"P4 Controller"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <DropDownListLink>ControllerType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>-1073FE+98*3</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356905</ID>
+                  <Description>"Faction Colour"</Description>
+                  <DropDownListLink>FactionColour</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>-1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356906</ID>
+                  <Description>"Team"</Description>
+                  <DropDownListLink>TeamType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+12</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356907</ID>
+                  <Description>"AI"</Description>
+                  <DropDownListLink>AIType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+14</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356916</ID>
+                  <Description>"Current G"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>-1A</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
           <ID>10277</ID>
           <Description>"-- Sturm Mod Stuff --"</Description>
           <GroupHeader>1</GroupHeader>
@@ -1596,9 +1899,49 @@ Danger Pool:(Repair Other Map)
 </DropDownList>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
+        <CheatEntry>
+          <ID>356893</ID>
+          <Description>"ControllerType"</Description>
+          <DropDownList DisplayValueAsItem="1">01:Player
+02:Computer
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356895</ID>
+          <Description>"FactionColour"</Description>
+          <DropDownList DisplayValueAsItem="1">01:Orange Star
+02:Blue Moon
+03:Green Earth
+04:Yellow Comet
+05:Black Hole
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356897</ID>
+          <Description>"TeamType"</Description>
+          <DropDownList DisplayValueAsItem="1">00:Team A
+01:Team B
+02:Team C
+03:Team D
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356899</ID>
+          <Description>"AIType"</Description>
+          <DropDownList DisplayValueAsItem="1">00:All-out
+01:Attack
+02:General
+03:Defense
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
-  <Comments>E7FFDEFFE7FFDEFF</Comments>
+  <Comments>E7FFDEFFE7FFDEFF
+</Comments>
 </CheatTable>
