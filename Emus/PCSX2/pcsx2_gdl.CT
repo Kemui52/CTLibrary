@@ -1863,6 +1863,42 @@ end );
                   <ShowAsBinary>0</ShowAsBinary>
                   <Address>+0</Address>
                 </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192989</ID>
+                  <Description>"Spider (Forest)"</Description>
+                  <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <Color>808080</Color>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>5</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192991</ID>
+                  <Description>"Genie (Desert)"</Description>
+                  <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <Color>808080</Color>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>6</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>+0</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192990</ID>
+                  <Description>"Yeti (Ice)"</Description>
+                  <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <Color>808080</Color>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>7</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>+0</Address>
+                </CheatEntry>
               </CheatEntries>
             </CheatEntry>
             <CheatEntry>

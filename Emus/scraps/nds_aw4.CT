@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>356891</ID>
+      <Description>"Scan for ARM9 Start"</Description>
+      <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <VariableType>Auto Assembler Script</VariableType>
+      <AssemblerScript Async="1">[ENABLE]
+{$lua}
+--Found on MelonDS 1.0 RC. Dunno if that matters.
+addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
+
+{$asm}
+[DISABLE]
+{$lua}
+--addrRAMStart = nil
+
+
+</AssemblerScript>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>2</ID>
+      <Description>"ARM9 Start"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>addrRAMStart</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>10137</ID>
+          <Description>"-- Battle History --"</Description>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10092</ID>
+          <Description>"Overall"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+15DA2C-37C</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>10095</ID>
+              <Description>"Total play time"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+37C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10096</ID>
+              <Description>"Total turns"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+380</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10097</ID>
+              <Description>"S Ranks"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+384</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10107</ID>
+              <Description>"A Ranks"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+388</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10108</ID>
+              <Description>"B Ranks"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+38C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10109</ID>
+              <Description>"C Ranks"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+390</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356947</ID>
+          <Description>"-- Game Stuff --"</Description>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356953</ID>
+          <Description>"Level Flags"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+168F15</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>356954</ID>
+              <Description>"Level Up"</Description>
+              <DropDownListLink>BOOLEAN</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>0</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356956</ID>
+              <Description>"HUD Visible?"</Description>
+              <DropDownListLink>BOOLEAN</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>2</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356957</ID>
+              <Description>"CO Meter Buildup"</Description>
+              <DropDownListLink>BOOLEAN</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>4</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356955</ID>
+              <Description>"CO Units"</Description>
+              <DropDownListLink>BOOLEAN</DropDownListLink>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Binary</VariableType>
+              <BitStart>5</BitStart>
+              <BitLength>1</BitLength>
+              <ShowAsBinary>0</ShowAsBinary>
+              <Address>+0</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356958</ID>
+          <Description>"Capture Limit"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+168F16</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356959</ID>
+          <Description>"Turn Limit"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+168F17</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356912</ID>
+          <Description>"Player Data"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>356892</ID>
+              <Description>"P1 Controller"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <DropDownListLink>ControllerType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+14B7E6+8C*0</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356894</ID>
+                  <Description>"Faction Colour"</Description>
+                  <DropDownListLink>FactionColour</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>-1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356896</ID>
+                  <Description>"Team"</Description>
+                  <DropDownListLink>TeamType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356918</ID>
+                  <Description>"Faction"</Description>
+                  <DropDownListLink>FactionType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356917</ID>
+                  <Description>"Unit Direction"</Description>
+                  <DropDownListLink>UnitDirection</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356920</ID>
+                  <Description>"Unit Type"</Description>
+                  <DropDownListLink>UnitType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356898</ID>
+                  <Description>"AI"</Description>
+                  <DropDownListLink>AIType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356913</ID>
+                  <Description>"Current G"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>-1E</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356948</ID>
+                  <Description>"CO"</Description>
+                  <DropDownListLink>COValues</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+4E</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356923</ID>
+              <Description>"P2 Controller"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <DropDownListLink>ControllerType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+14B7E6+8C*1</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356924</ID>
+                  <Description>"Faction Colour"</Description>
+                  <DropDownListLink>FactionColour</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>-1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356925</ID>
+                  <Description>"Team"</Description>
+                  <DropDownListLink>TeamType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356926</ID>
+                  <Description>"Faction"</Description>
+                  <DropDownListLink>FactionType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356927</ID>
+                  <Description>"Unit Direction"</Description>
+                  <DropDownListLink>UnitDirection</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356928</ID>
+                  <Description>"Unit Type"</Description>
+                  <DropDownListLink>UnitType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356929</ID>
+                  <Description>"AI"</Description>
+                  <DropDownListLink>AIType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356930</ID>
+                  <Description>"Current G"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>-1E</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356951</ID>
+                  <Description>"CO"</Description>
+                  <DropDownListLink>COValues</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+4E</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356939</ID>
+              <Description>"P3 Controller"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <DropDownListLink>ControllerType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+14B7E6+8C*2</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356940</ID>
+                  <Description>"Faction Colour"</Description>
+                  <DropDownListLink>FactionColour</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>-1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356941</ID>
+                  <Description>"Team"</Description>
+                  <DropDownListLink>TeamType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356942</ID>
+                  <Description>"Faction"</Description>
+                  <DropDownListLink>FactionType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356943</ID>
+                  <Description>"Unit Direction"</Description>
+                  <DropDownListLink>UnitDirection</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356944</ID>
+                  <Description>"Unit Type"</Description>
+                  <DropDownListLink>UnitType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356945</ID>
+                  <Description>"AI"</Description>
+                  <DropDownListLink>AIType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356946</ID>
+                  <Description>"Current G"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>-1E</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356950</ID>
+                  <Description>"CO"</Description>
+                  <DropDownListLink>COValues</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+4E</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356931</ID>
+              <Description>"P4 Controller"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <DropDownListLink>ControllerType</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+14B7E6+8C*3</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356932</ID>
+                  <Description>"Faction Colour"</Description>
+                  <DropDownListLink>FactionColour</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>-1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356933</ID>
+                  <Description>"Team"</Description>
+                  <DropDownListLink>TeamType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+8</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356934</ID>
+                  <Description>"Faction"</Description>
+                  <DropDownListLink>FactionType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+9</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356935</ID>
+                  <Description>"Unit Direction"</Description>
+                  <DropDownListLink>UnitDirection</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+A</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356936</ID>
+                  <Description>"Unit Type"</Description>
+                  <DropDownListLink>UnitType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+B</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356937</ID>
+                  <Description>"AI"</Description>
+                  <DropDownListLink>AIType</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356938</ID>
+                  <Description>"Current G"</Description>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>4 Bytes</VariableType>
+                  <Address>-1E</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356949</ID>
+                  <Description>"CO"</Description>
+                  <DropDownListLink>COValues</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+4E</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356961</ID>
+          <Description>"Selected Map"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+14A0DA</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356962</ID>
+          <Description>"Current Tileset"</Description>
+          <DropDownList DisplayValueAsItem="1">00:Normal
+01:Snow
+02:Desert
+03:Ruins
+04:Shelter
+05:Sky Cliffs
+06:Rubble
+07:Flowers
+08:Pulsatrix (Talon Gun?)
+09:Nest
+</DropDownList>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+14A0EF</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356960</ID>
+          <Description>"Completed Versus Maps"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>+15778A</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10200</ID>
+          <Description>"map tiles?"</Description>
+          <DropDownList DisplayValueAsItem="1">0082:Worm Canal (Inaccessible)
+0083:Broken Land
+0084:Rough Terrain
+0085:Deep Forest
+0086:Scramble Isle
+0087:Danger Pool [[Broken Name]]
+0088:Dark City
+0089:Clover Pond
+008A:Cross Cape
+00BC:Red Heart (Survival)
+00BD:Convoy Cape
+00BE:Cannon Land
+00BF:Silo Sweep
+00C0:
+00C1:
+00C2:
+00C3:
+00C4:
+00C5:
+00C6:
+00C7:
+00C8:
+00C9:
+00CA:
+00CB:
+00CC:
+00CD:
+00CE:
+00CF:
+00D0:
+00D1:
+00D2:
+00D3:
+00D4:
+00D5:
+00D6:
+00D7:
+00D8:
+00D9:
+00DA:
+00DB:
+00DC:The Swarm
+</DropDownList>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+1459A0</Address>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10083</ID>
+      <Description>"Value Lists"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <Color>C0C0C0</Color>
+      <GroupHeader>1</GroupHeader>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>10084</ID>
+          <Description>"BOOLEAN"</Description>
+          <DropDownList DisplayValueAsItem="1">0:False
+1:True
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10090</ID>
+          <Description>"ShopIcons"</Description>
+          <DropDownList DisplayValueAsItem="1">14:Two Stars
+19:Character
+1A:Character Color
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10085</ID>
+          <Description>"ShopFunctions"</Description>
+          <DropDownList DisplayValueAsItem="1">021017F4:Campaign?
+02101A98:Character
+02101A68:Colors
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10086</ID>
+          <Description>"ShopVariables"</Description>
+          <DropDownList DisplayValueAsItem="1">0B:Sturm (+mod?)
+0D:Lash
+1C:Von Bolt
+20:Hard Campaign
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10220</ID>
+          <Description>"COValues"</Description>
+          <DropDownList DisplayValueAsItem="1">0D:Davis
+0E:The Beast
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356893</ID>
+          <Description>"ControllerType"</Description>
+          <DropDownList DisplayValueAsItem="1">01:Player
+02:Computer
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356895</ID>
+          <Description>"FactionColour"</Description>
+          <DropDownList DisplayValueAsItem="1">01:Red
+02:Blue
+03:Yellow
+04:Black
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356919</ID>
+          <Description>"FactionType"</Description>
+          <DropDownList DisplayValueAsItem="1">00:None
+01:12th Battalion
+02:Lazurian
+03:NRA
+04:IDS
+05:Fanatics
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356921</ID>
+          <Description>"UnitDirection"</Description>
+          <DropDownList DisplayValueAsItem="1">00:Left
+01:Right
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356922</ID>
+          <Description>"UnitType"</Description>
+          <DropDownList DisplayValueAsItem="1">00:Rubinelle/South
+01:Lazurian/North
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356897</ID>
+          <Description>"TeamType"</Description>
+          <DropDownList DisplayValueAsItem="1">01:Team A
+02:Team B
+03:Team C
+04:Team D
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356899</ID>
+          <Description>"AIType"</Description>
+          <DropDownList DisplayValueAsItem="1">00:All-out
+01:Attack
+02:General
+03:Defense
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+</CheatTable>

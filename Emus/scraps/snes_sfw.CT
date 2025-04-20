@@ -37,7 +37,9 @@
 12:Depot Neutral
 13:?? Destroyed HQ
 26:City RS
+2B:Seaport RS
 46:City BM
+4B:Seaport BM
 </DropDownList>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
@@ -55,6 +57,24 @@
             </CheatEntry>
             <CheatEntry>
               <ID>10086</ID>
+              <Description>"1,6"</Description>
+              <DropDownListLink>Map Tile Types</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+1+21*6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10101</ID>
+              <Description>"7,3"</Description>
+              <DropDownListLink>Map Tile Types</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+7+21*3</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10095</ID>
               <Description>"7,4"</Description>
               <DropDownListLink>Map Tile Types</DropDownListLink>
               <ShowAsHex>1</ShowAsHex>
@@ -70,6 +90,15 @@
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
               <Address>+A+21*4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10096</ID>
+              <Description>"E,6"</Description>
+              <DropDownListLink>Map Tile Types</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+E+21*6</Address>
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
@@ -94,10 +123,16 @@
 0088:Depot Neutral
 0089:Lab Neutral
 008A:HQ RS
+008B:Base RS
+0090:Seaport RS
+0091:Seaport Top RS
+009A:Seaport BM
+009B:Seaport Top BM
 00B3:Rubble
 00C6:Fort
 0100:Sea Center
 0120:Docks W
+0121:Docks E
 </DropDownList>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
@@ -114,6 +149,15 @@
               <Address>+0*2+42*0</Address>
             </CheatEntry>
             <CheatEntry>
+              <ID>10102</ID>
+              <Description>"0,6"</Description>
+              <DropDownListLink>Map Tileset</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+0*2+42*6</Address>
+            </CheatEntry>
+            <CheatEntry>
               <ID>10088</ID>
               <Description>"1,5"</Description>
               <DropDownListLink>Map Tileset</DropDownListLink>
@@ -121,6 +165,24 @@
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
               <Address>+1*2+42*5</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10100</ID>
+              <Description>"1,6"</Description>
+              <DropDownListLink>Map Tileset</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+1*2+42*6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10103</ID>
+              <Description>"2,6"</Description>
+              <DropDownListLink>Map Tileset</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+2*2+42*6</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>10094</ID>
@@ -157,6 +219,33 @@
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
               <Address>+A*2+42*4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10097</ID>
+              <Description>"E,5"</Description>
+              <DropDownListLink>Map Tileset</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+E*2+42*5</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10098</ID>
+              <Description>"E,6"</Description>
+              <DropDownListLink>Map Tileset</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+E*2+42*6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>10099</ID>
+              <Description>"F,6"</Description>
+              <DropDownListLink>Map Tileset</DropDownListLink>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>2 Bytes</VariableType>
+              <Address>+F*2+42*6</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>10093</ID>
@@ -200,6 +289,7 @@
                 <CheatEntry>
                   <ID>9</ID>
                   <Description>"X"</Description>
+                  <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
                   <Address>+1</Address>
@@ -207,6 +297,7 @@
                 <CheatEntry>
                   <ID>10</ID>
                   <Description>"Y"</Description>
+                  <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
                   <Address>+2</Address>
