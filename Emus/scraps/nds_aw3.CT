@@ -3,7 +3,7 @@
   <CheatEntries>
     <CheatEntry>
       <ID>356891</ID>
-      <Description>"Scan for RAM Start"</Description>
+      <Description>"Scan for ARM9 Start"</Description>
       <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript Async="1">[ENABLE]
@@ -29,14 +29,14 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
       <CheatEntries>
         <CheatEntry>
           <ID>10273</ID>
-          <Description>"RAM Start"</Description>
+          <Description>"ARM9 Start"</Description>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
           <Address>-290718</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>10258</ID>
+          <ID>356917</ID>
           <Description>"Wallpaper"</Description>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
@@ -1181,6 +1181,13 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
           <ID>10277</ID>
           <Description>"-- Sturm Mod Stuff --"</Description>
           <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356920</ID>
+          <Description>"Oozium Repair Cost"</Description>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>+648AC+6C*1A</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>10274</ID>

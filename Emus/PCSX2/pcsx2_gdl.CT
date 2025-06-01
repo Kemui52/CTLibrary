@@ -1899,6 +1899,42 @@ end );
                   <ShowAsBinary>0</ShowAsBinary>
                   <Address>+0</Address>
                 </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192992</ID>
+                  <Description>"Wraith (Dream)"</Description>
+                  <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <Color>808080</Color>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>0</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>+1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192993</ID>
+                  <Description>"Skorne (Glass)"</Description>
+                  <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <Color>808080</Color>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>1</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>+1</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>1337192994</ID>
+                  <Description>"Skorne (Rune)"</Description>
+                  <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <Color>808080</Color>
+                  <VariableType>Binary</VariableType>
+                  <BitStart>2</BitStart>
+                  <BitLength>1</BitLength>
+                  <ShowAsBinary>0</ShowAsBinary>
+                  <Address>+1</Address>
+                </CheatEntry>
               </CheatEntries>
             </CheatEntry>
             <CheatEntry>
@@ -1957,7 +1993,7 @@ end );
                 </CheatEntry>
                 <CheatEntry>
                   <ID>1337192982</ID>
-                  <Description>"hex 9"</Description>
+                  <Description>"Soul (Skorne)"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
