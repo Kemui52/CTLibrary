@@ -8,7 +8,7 @@
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript Async="1">{  Game Executable   : Pawperty Damage.exe
    Author            : Kemui52
-   Executable Version: Steam 1.5.1
+   Executable Version: Steam 1.5.3
    Script Date       : 2024-02-12
 }
 [ENABLE]
@@ -135,7 +135,7 @@ BFplayersettings = AOBScanUnique("00 00 00 00 00 00 80 3F 00 00 00 00 00 00 70 4
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript Async="1">{  Game Executable   : Pawperty Damage.exe
    Author            : Kemui52
-   Executable Version: Steam 1.5.1
+   Executable Version: Steam 1.5.3
    Script Date       : 2024-02-12
 }
 [ENABLE]

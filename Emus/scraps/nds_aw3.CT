@@ -36,7 +36,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
           <Address>-290718</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>356917</ID>
+          <ID>356922</ID>
           <Description>"Wallpaper"</Description>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
@@ -960,6 +960,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
 018A:Black Cannon N 2,2 - 3x3
 018D:Black Obelisk 2,2 - 3x3
 0193:Deathray 2,2 - 3x3
+0180:Silo
 01A0:Silo Used
 01A1:Black Crystal
 01A2:Volcano 2,3 - 4x4
@@ -968,6 +969,11 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
 01A9:Volcano 2,3 - 4x4
 01AB:Giant Missile 2,3 - 4x4
 01AF:Black Fortress 2,3 - 4x4
+1B9:Comm Tower Neutral
+1BA:Comm Tower OS
+1BB:Comm Tower BM
+1BC:Comm Tower GE
+1BD:Comm Tower YC
 01C0:Neutral HQ
 01D9:Lab Neutral
 01DA:Lab OS
@@ -1275,6 +1281,91 @@ Danger Pool:(Repair Other Map)
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>2 Bytes</VariableType>
           <Address>-10CA58</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356917</ID>
+          <Description>"Map Headers"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>+4B610</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>356923</ID>
+              <Description>"somewhere"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+0xA0*0x43</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356924</ID>
+                  <Description>"Perimeter Tile"</Description>
+                  <DropDownListLink>PerimeterTile</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+9C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356925</ID>
+                  <Description>"?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+9D</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356927</ID>
+                  <Description>"Perimeter Palette"</Description>
+                  <DropDownListLink>PerimeterPalette</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>2 Bytes</VariableType>
+                  <Address>+9E</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356930</ID>
+              <Description>"Crater Isle"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>8 Bytes</VariableType>
+              <Address>+0xA0*0x2</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>356931</ID>
+                  <Description>"Perimeter Tile"</Description>
+                  <DropDownListLink>PerimeterTile</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+9C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356932</ID>
+                  <Description>"?"</Description>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>Byte</VariableType>
+                  <Address>+9D</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>356933</ID>
+                  <Description>"Perimeter Palette"</Description>
+                  <DropDownListLink>PerimeterPalette</DropDownListLink>
+                  <ShowAsHex>1</ShowAsHex>
+                  <ShowAsSigned>0</ShowAsSigned>
+                  <VariableType>2 Bytes</VariableType>
+                  <Address>+9E</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
         <CheatEntry>
           <ID>10211</ID>
@@ -1942,6 +2033,72 @@ Danger Pool:(Repair Other Map)
 01:Attack
 02:General
 03:Defense
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356929</ID>
+          <Description>"PerimeterTile"</Description>
+          <DropDownList DisplayValueAsItem="1">00:City
+01:Factory
+02:Factory Frame 2
+03:Factory Frame 3
+04:Factory Frame 4
+05:Factory Frame 5
+06:Airport
+07:Seaport
+08:Comm Tower
+09:Lab
+0A:HQ BM
+0B:HQ BH
+0C:HQ GE
+0D:HQ YC
+0E:Silo Used
+0F:Silo
+10:Forest
+11:Mountain
+12:Minicannon W
+13:Minicannon E
+14:Minicannon S
+15:Minicannon N
+16:Black Crystal
+4F:Plain
+51:Road Vert.
+5C:Road Hori.
+65:Road 4-Way
+67:Bridge Hori.
+68:Bridge Vert.
+6B:Pipe Hori.
+6C:Pipe Vert.
+73:Broken Pipe Vert.
+74:Broken Pipe Hori.
+78:Sea
+87:Reef
+8E:Sea 1-Tile
+CC:River Vert.
+D1:River 4-Way
+D7:River Hori.
+</DropDownList>
+          <GroupHeader>1</GroupHeader>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356928</ID>
+          <Description>"PerimeterPalette"</Description>
+          <DropDownList DisplayValueAsItem="1">0000:Mountain
+0001:Land
+0005:Road
+0006:Building
+0007:Water
+000F:Pipe
+0015:Cannon
+0021:Fog w/ Green Grass
+0026:Orange Star
+0046:Blue Moon
+0066:Green Earth
+0086:Yellow Comet
+0100:Fog
+0207:Perimeter Water
+0301:Perimeter Land
 </DropDownList>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>

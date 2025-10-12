@@ -3,7 +3,7 @@
   <CheatEntries>
     <CheatEntry>
       <ID>5</ID>
-      <Description>"pointerscan result"</Description>
+      <Description>"snes9x 1.63 pointer"</Description>
       <ShowAsHex>1</ShowAsHex>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
