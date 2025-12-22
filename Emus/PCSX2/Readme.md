@@ -6,7 +6,7 @@ All tables are for the NTSC-U region of the game, unless it's Japan only. Most i
 
 ### Gauntlet - Dark Legacy
 
-An AoB scan script for modifying the growth and shrink sizes, as well as item and stat research. The script requires **recompiler** mode, which you should have on by default anyway.
+An AoB scan script for modifying the growth and shrink sizes, as well as item and stat research. The script requires **recompiler** mode in the emulator, which you should have on by default anyway.
 
 ### Okami
 

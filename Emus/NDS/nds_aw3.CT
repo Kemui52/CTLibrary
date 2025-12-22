@@ -1283,6 +1283,57 @@ Danger Pool:(Repair Other Map)
           <Address>-10CA58</Address>
         </CheatEntry>
         <CheatEntry>
+          <ID>356934</ID>
+          <Description>"DS Map"</Description>
+          <DropDownList DisplayValueAsItem="1">0082:Worm Canal (Inaccessible)
+0083:Broken Land
+0084:Rough Terrain
+0085:Deep Forest
+0086:Scramble Isle
+0087:Danger Pool [[Broken Name]]
+0088:Dark City
+0089:Clover Pond
+008A:Cross Cape
+00BC:Red Heart (Survival)
+00BD:Convoy Cape
+00BE:Cannon Land
+00BF:Silo Sweep
+00C0:
+00C1:
+00C2:
+00C3:
+00C4:
+00C5:
+00C6:
+00C7:
+00C8:
+00C9:
+00CA:
+00CB:
+00CC:
+00CD:
+00CE:
+00CF:
+00D0:
+00D1:
+00D2:
+00D3:
+00D4:
+00D5:
+00D6:
+00D7:
+00D8:
+00D9:
+00DA:
+00DB:
+00DC:The Swarm
+</DropDownList>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>2 Bytes</VariableType>
+          <Address>-106888</Address>
+        </CheatEntry>
+        <CheatEntry>
           <ID>356917</ID>
           <Description>"Map Headers"</Description>
           <Options moManualExpandCollapse="1"/>
@@ -1298,7 +1349,7 @@ Danger Pool:(Repair Other Map)
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>8 Bytes</VariableType>
-              <Address>+0xA0*0x43</Address>
+              <Address>+0xA0*0x151</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>356924</ID>
