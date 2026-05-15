@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="45">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>164</ID>
+      <Description>"Player Setting (Soldier Type)"</Description>
+      <Options moManualExpandCollapse="1"/>
+      <DropDownList DisplayValueAsItem="1">00000000:Infantry
+00000001:PaleWing
+</DropDownList>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>[eemem]+2C4820</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>165</ID>
+          <Description>"SE Volume"</Description>
+          <DropDownList DisplayValueAsItem="1">00:Off
+01:On
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+740</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>387</ID>
+          <Description>"Music Volume"</Description>
+          <DropDownList DisplayValueAsItem="1">00:Off
+01:On
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+744</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>386</ID>
+          <Description>"Voice Volume"</Description>
+          <DropDownList DisplayValueAsItem="1">00:Off
+01:On
+</DropDownList>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Float</VariableType>
+          <Address>+748</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>385</ID>
+          <Description>"Screen Vibration"</Description>
+          <DropDownList DisplayValueAsItem="1">00:Off
+01:On
+</DropDownList>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>Byte</VariableType>
+          <Address>+74C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>168</ID>
+          <Description>"VS Tank Class"</Description>
+          <VariableType>String</VariableType>
+          <Length>26</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>-5dce0</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>167</ID>
+          <Description>"VS Bike Class"</Description>
+          <VariableType>String</VariableType>
+          <Length>24</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>-5dc90</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>166</ID>
+          <Description>"VS Heli Class"</Description>
+          <VariableType>String</VariableType>
+          <Length>23</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>-5dc40</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>198</ID>
+          <Description>"Player Count (CDCDCD00)"</Description>
+          <DropDownList DisplayValueAsItem="1">CDCDCD00:One
+CDCDCD01:Two
+</DropDownList>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+7F5F9C</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>200</ID>
+          <Description>"Radar Model"</Description>
+          <VariableType>String</VariableType>
+          <Length>15</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>-61240</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>204</ID>
+          <Description>"Weather (needs nop Writes To)"</Description>
+          <DropDownList DisplayValueAsItem="1">00:fine
+01:cloudy
+02:sunset
+03:dawn
+04:foggy (invalid)
+</DropDownList>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>Byte</VariableType>
+          <Address>-4A844</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>352</ID>
+          <Description>"Mission Suffix Number (shifted by undub)"</Description>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+6E2AE4</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>353</ID>
+          <Description>"Mission Folder"</Description>
+          <DropDownList DisplayValueAsItem="1">Mission%03d: (default)
+</DropDownList>
+          <VariableType>String</VariableType>
+          <Length>15</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>-5E348</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356</ID>
+          <Description>"EDF Team Pointerlist?"</Description>
+          <ShowAsHex>1</ShowAsHex>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+7F5E98</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>358</ID>
+          <Description>"Music Strings (shifted by undub)"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+6D2EB0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>359</ID>
+              <Description>"kyodaiari Left m1"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>360</ID>
+              <Description>"kyodaiari Right m1"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>16</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+11</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>361</ID>
+              <Description>"enban L"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>19</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+22</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>362</ID>
+              <Description>"enban R"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>19</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+36</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>363</ID>
+              <Description>"hisou L m3"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>21</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+4A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>364</ID>
+              <Description>"hisou R m3"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>21</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+60</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>365</ID>
+              <Description>"kettou L"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>13</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+76</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>366</ID>
+              <Description>"kettou R"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>13</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+84</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>367</ID>
+              <Description>"seibutu L"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>25</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+92</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>368</ID>
+              <Description>"seibutu R"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>25</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+AC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>369</ID>
+              <Description>"saisyuukessen L m4"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>28</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+C6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>370</ID>
+              <Description>"saisyuukessen R m4"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>28</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+E3</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>371</ID>
+              <Description>"totunyuu L m2"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>20</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+100</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>373</ID>
+              <Description>"totunyuu R m2"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>20</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+115</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>374</ID>
+              <Description>"sinbu L"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>17</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+12A</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>375</ID>
+              <Description>"sinbu R"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>17</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+13C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>377</ID>
+              <Description>"hyakuasi L"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>15</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+14E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>381</ID>
+              <Description>"hyakuasi R"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>15</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+15E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>382</ID>
+              <Description>"daikaijyuu L"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>17</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+16E</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>379</ID>
+              <Description>"daikaijyuu R"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>17</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+180</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>380</ID>
+              <Description>"mothership L"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>17</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+192</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>378</ID>
+              <Description>"mothership R"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>17</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+1A4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>383</ID>
+              <Description>"adan L"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>11</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+1B6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>384</ID>
+              <Description>"adan R"</Description>
+              <DropDownListLink>MusicStrings</DropDownListLink>
+              <VariableType>String</VariableType>
+              <Length>11</Length>
+              <Unicode>0</Unicode>
+              <CodePage>0</CodePage>
+              <ZeroTerminate>1</ZeroTerminate>
+              <Address>+1C2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>376</ID>
+              <Description>"MusicStrings"</Description>
+              <DropDownList>M1-L.VB:kyodaiari
+M1-R.VB:kyodaiari
+M2-L.VB:totunyuu
+M2-R.VB:totunyuu
+M3-L.VB:hisou
+M3-R.VB:hisou
+M4-L.VB:saisyuukessen
+M4-R.VB:saisyuukessen
+DEMO2-L.VB:kaiju
+DEMO2-R.VB:kaiju
+</DropDownList>
+              <GroupHeader>1</GroupHeader>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>190</ID>
+      <Description>"Veh Max Health Temp"</Description>
+      <VariableType>Float</VariableType>
+      <Address>214E0648</Address>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>173</ID>
+          <Description>"Camera Stuff"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>185</ID>
+              <Description>"Look X (Not used)"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+F8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>186</ID>
+              <Description>"Look Y (Not used)"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+FC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>187</ID>
+              <Description>"Look Z (Not used)"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+100</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>172</ID>
+              <Description>"Cam X"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+108</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>171</ID>
+              <Description>"Cam Y"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+10C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>170</ID>
+              <Description>"Cam Z"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+110</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>193</ID>
+          <Description>"Misc Stuff"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>265</ID>
+              <Description>"Invulnerable"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>+C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>191</ID>
+              <Description>"Disabled Controls"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>+F0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>349</ID>
+              <Description>"Controlling Me ID"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+20</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>268</ID>
+          <Description>"Ant Stuff"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>266</ID>
+              <Description>"Disables Object Breaking?"</Description>
+              <VariableType>Byte</VariableType>
+              <Address>+4F8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>258</ID>
+              <Description>"Coord Stuff"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <VariableType>Float</VariableType>
+              <Address>+0</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>257</ID>
+                  <Description>"Boundary X Low"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+608</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>259</ID>
+                  <Description>"Boundary Y Low"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+60C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>260</ID>
+                  <Description>"Boundary Z Low"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+610</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>261</ID>
+                  <Description>"Boundary X High"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+618</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>262</ID>
+                  <Description>"Boundary Y High"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+61C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>263</ID>
+                  <Description>"Boundary Z High"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+620</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>269</ID>
+          <Description>"Saurus Stuff"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>192</ID>
+              <Description>"Damage Scale (Saurus?)"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+4A0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>270</ID>
+              <Description>"Coord Stuff"</Description>
+              <Options moManualExpandCollapse="1"/>
+              <VariableType>Float</VariableType>
+              <Address>+0</Address>
+              <CheatEntries>
+                <CheatEntry>
+                  <ID>271</ID>
+                  <Description>"Boundary X Low"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+378</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>272</ID>
+                  <Description>"Boundary Y Low"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+37C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>273</ID>
+                  <Description>"Boundary Z Low"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+380</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>274</ID>
+                  <Description>"Boundary X High"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+388</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>275</ID>
+                  <Description>"Boundary Y High"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+38C</Address>
+                </CheatEntry>
+                <CheatEntry>
+                  <ID>276</ID>
+                  <Description>"Boundary Z High"</Description>
+                  <VariableType>Float</VariableType>
+                  <Address>+390</Address>
+                </CheatEntry>
+              </CheatEntries>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>189</ID>
+      <Description>"P1 Max Health Temp"</Description>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>Float</VariableType>
+      <Address>[eemem]+ABA6B8+8*0</Address>
+      <Offsets>
+        <Offset>B8+[eemem]</Offset>
+      </Offsets>
+      <CheatEntries>
+        <CheatEntry>
+          <ID>176</ID>
+          <Description>"Camera Stuff"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <VariableType>Float</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>181</ID>
+              <Description>"Look X (Used for Vehicle)"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+F8</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>182</ID>
+              <Description>"Look Y (Used for Vehicle)"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+FC</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>183</ID>
+              <Description>"Look Z (Used for Vehicle)"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+100</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>177</ID>
+              <Description>"Cam X"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+108</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>178</ID>
+              <Description>"Cam Y"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+10C</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>179</ID>
+              <Description>"Cam Z"</Description>
+              <VariableType>Float</VariableType>
+              <Address>+110</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>351</ID>
+          <Description>"Misc Stuff"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+0</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>350</ID>
+              <Description>"I'm Controlling ID"</Description>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>4 Bytes</VariableType>
+              <Address>+24</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+      </CheatEntries>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols>
+    <SymbolEntry>
+      <Name>chkAmmoAfterFireAOB</Name>
+      <Address>7FF70CDA0D36</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>chkAmmoAfterFireAOB1</Name>
+      <Address>7FF70CDA0D36</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>chkAmmoAfterFireAOB2</Name>
+      <Address>7FF70CD9ECFC</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>chkAmmoAfterFireAOB3</Name>
+      <Address>7FF70CD9FC3A</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>healthWrite1cAOB</Name>
+      <Address>7FF70CD1ED5E</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>fMinHealth</Name>
+      <Address>7FF70CA3006B</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>ammoChkMaxOnReloadAOB</Name>
+      <Address>7FF70CD9F1B6</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>energyWrite1OnUseAOB</Name>
+      <Address>7FF70CD36065</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>WeaponData</Name>
+      <Address>7FF70CA0001C</Address>
+    </SymbolEntry>
+    <SymbolEntry>
+      <Name>CurWeapAOB</Name>
+      <Address>7FF70CE952FF</Address>
+    </SymbolEntry>
+  </UserdefinedSymbols>
+  <Comments>--EDF1 missions (for music)
+(#+2)/3
+1 ants, cine ufos
+2 ants
+3 ants on tower
+4 mothership ufo fakeout
+5 dropships
+6 roaming valley dropships
+7 coastal darogas &amp; ufos
+8 daroga city
+9 daroga city
+10saurous!
+11crimson [m1]
+12mothership ufo fight
+13daroga pincer
+14dropship circle
+15valley dropships
+16double saurous! [demo2]
+17daroga in valley pincer
+18ants&amp;ufos out of valley
+19red ufos!!
+20mothership daroga fight [m4]
+21queen ant
+22mechasaurous [demo2]
+23dropships defended by darogas
+24the big ruins fight [m3]
+25mothership confrontation [m4, then m3]
+--Max health is a float and aligned to 8. Goes max, something, current, invuln flag.
+--Weather can't be changed unless a certain operation is NOP. Use "Find out what writes to this address" and replace the op that shows up in the middle of the loading screen "with a code that does nothing". The op is "mov [ecx],edx".
+--The radar is aligned to C and 0, has 0780 below 0 and 00000010 next to that. Showing flag is -24 away. The health bar is aligned to 4 and 8, has just 07 and 00000010 to its right. Showing flag is -1C away from 8. Find these with the player's instance ID the HUD is using. A vehicle's "Controlling Me ID" is the player's ID.
+--Here's boundary values top to bottom:
+City 1 60 60 1340 1340
+City 2 60 60 1340 1340
+Suburbs 20 20 1680 1380
+London 20 20 1880 1780
+</Comments>
+</CheatTable>
