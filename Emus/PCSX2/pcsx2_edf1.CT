@@ -2,55 +2,64 @@
 <CheatTable CheatEngineTableVersion="45">
   <CheatEntries>
     <CheatEntry>
-      <ID>169</ID>
-      <Description>"Player Setting"</Description>
-      <Options moManualExpandCollapse="1"/>
-      <ShowAsHex>1</ShowAsHex>
+      <ID>174</ID>
+      <Description>"eemem"</Description>
       <ShowAsSigned>0</ShowAsSigned>
-      <VariableType>Byte</VariableType>
-      <Address>[eemem]+260800</Address>
+      <VariableType>4 Bytes</VariableType>
+      <Address>[eemem]</Address>
       <CheatEntries>
         <CheatEntry>
-          <ID>173</ID>
-          <Description>"P1 Controls"</Description>
-          <DropDownList DisplayValueAsItem="1">00:Normal
+          <ID>169</ID>
+          <Description>"Player Setting"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+260800</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>173</ID>
+              <Description>"P1 Controls"</Description>
+              <DropDownList DisplayValueAsItem="1">00:Normal
 01:Technical
 </DropDownList>
-          <ShowAsHex>1</ShowAsHex>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>Byte</VariableType>
-          <Address>+0</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>170</ID>
-          <Description>"SE Volume"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>Float</VariableType>
-          <Address>+170</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>172</ID>
-          <Description>"BGM Volume"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>Float</VariableType>
-          <Address>+174</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>171</ID>
-          <Description>"Voice Volume"</Description>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>Float</VariableType>
-          <Address>+178</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>165</ID>
-          <Description>"Screen Vibration"</Description>
-          <DropDownList DisplayValueAsItem="1">00:Off
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>170</ID>
+              <Description>"SE Volume"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+170</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>172</ID>
+              <Description>"BGM Volume"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+174</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>171</ID>
+              <Description>"Voice Volume"</Description>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Float</VariableType>
+              <Address>+178</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>165</ID>
+              <Description>"Screen Vibration"</Description>
+              <DropDownList DisplayValueAsItem="1">00:Off
 01:On
 </DropDownList>
-          <ShowAsHex>1</ShowAsHex>
-          <VariableType>Byte</VariableType>
-          <Address>+17C</Address>
+              <ShowAsHex>1</ShowAsHex>
+              <VariableType>Byte</VariableType>
+              <Address>+17C</Address>
+            </CheatEntry>
+          </CheatEntries>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>

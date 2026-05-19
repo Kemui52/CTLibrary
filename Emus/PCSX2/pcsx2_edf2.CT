@@ -2,6 +2,14 @@
 <CheatTable CheatEngineTableVersion="45">
   <CheatEntries>
     <CheatEntry>
+      <ID>388</ID>
+      <Description>"eemem"</Description>
+      <ShowAsHex>1</ShowAsHex>
+      <ShowAsSigned>0</ShowAsSigned>
+      <VariableType>4 Bytes</VariableType>
+      <Address>[eemem]</Address>
+    </CheatEntry>
+    <CheatEntry>
       <ID>164</ID>
       <Description>"Player Setting (Soldier Type)"</Description>
       <Options moManualExpandCollapse="1"/>

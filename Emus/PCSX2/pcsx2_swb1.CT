@@ -12,7 +12,6 @@
         <CheatEntry>
           <ID>1337192579</ID>
           <Description>"Refresh Pointer Symbols"</Description>
-          <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript>[ENABLE]
 {$lua}
@@ -374,6 +373,15 @@ PlayerPointerResult = PlayerPointerVal+GetAddress("[eemem]")
           </CheatEntries>
         </CheatEntry>
         <CheatEntry>
+          <ID>1337192602</ID>
+          <Description>"Instant Action Heroes"</Description>
+          <DropDownListLink>ONOFF</DropDownListLink>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>Byte</VariableType>
+          <Address>+643758</Address>
+        </CheatEntry>
+        <CheatEntry>
           <ID>2</ID>
           <Description>"team select ui colour"</Description>
           <ShowAsHex>1</ShowAsHex>
@@ -395,7 +403,6 @@ PlayerPointerResult = PlayerPointerVal+GetAddress("[eemem]")
       <ID>147</ID>
       <Description>"Value Lists"</Description>
       <Options moManualExpandCollapse="1"/>
-      <LastState Value="" RealAddress="00000000"/>
       <Color>C0C0C0</Color>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
@@ -405,7 +412,6 @@ PlayerPointerResult = PlayerPointerVal+GetAddress("[eemem]")
           <DropDownList DisplayValueAsItem="1">0:False
 1:True
 </DropDownList>
-          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -414,7 +420,6 @@ PlayerPointerResult = PlayerPointerVal+GetAddress("[eemem]")
           <DropDownList DisplayValueAsItem="1">00:Off
 01:On
 </DropDownList>
-          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -427,7 +432,6 @@ PlayerPointerResult = PlayerPointerVal+GetAddress("[eemem]")
 04:Specialist
 05:Jedi Hero
 </DropDownList>
-          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -440,11 +444,12 @@ PlayerPointerResult = PlayerPointerVal+GetAddress("[eemem]")
 05:Specialist
 06:Jedi Hero
 </DropDownList>
-          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
       </CheatEntries>
     </CheatEntry>
   </CheatEntries>
   <UserdefinedSymbols/>
+  <Comments>Enable 'Refresh Pointer Symbols' once in a match. It will need to be re-enabled if the pointer changes in a different map. The table may take a few seconds to reflect the new values.
+Playing as a Jedi may randomly not work for no discernable reason at all in certain game sessions.</Comments>
 </CheatTable>
