@@ -5,6 +5,7 @@
       <ID>356891</ID>
       <Description>"Scan for ARM9 Start"</Description>
       <Options moHideChildren="1" moDeactivateChildrenAsWell="1"/>
+      <LastState Activated="1"/>
       <VariableType>Auto Assembler Script</VariableType>
       <AssemblerScript Async="1">[ENABLE]
 {$lua}
@@ -23,6 +24,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
       <ID>2</ID>
       <Description>"Shop Funds"</Description>
       <Options moManualExpandCollapse="1"/>
+      <LastState Value="30452" RealAddress="1ABFDE60718"/>
       <ShowAsSigned>0</ShowAsSigned>
       <VariableType>4 Bytes</VariableType>
       <Address>addrRAMStart+290718</Address>
@@ -30,6 +32,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
         <CheatEntry>
           <ID>10273</ID>
           <Description>"ARM9 Start"</Description>
+          <LastState Value="E7FFDEFFE7FFDEFF" RealAddress="1ABFDBD0000"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
@@ -38,6 +41,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
         <CheatEntry>
           <ID>356922</ID>
           <Description>"Wallpaper"</Description>
+          <LastState Value="1E" RealAddress="1ABFDE6072C"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Byte</VariableType>
@@ -46,12 +50,14 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
         <CheatEntry>
           <ID>10137</ID>
           <Description>"-- Battle History --"</Description>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
           <ID>10092</ID>
           <Description>"Overall"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="000076F4" RealAddress="1ABFDE60718"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
@@ -60,6 +66,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10095</ID>
               <Description>"Total play time"</Description>
+              <LastState Value="35699021" RealAddress="1ABFDE60A94"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+37C</Address>
@@ -67,6 +74,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10096</ID>
               <Description>"Total turns"</Description>
+              <LastState Value="1557" RealAddress="1ABFDE60A98"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+380</Address>
@@ -74,6 +82,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10097</ID>
               <Description>"Total points earned"</Description>
+              <LastState Value="11036" RealAddress="1ABFDE60A9C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+384</Address>
@@ -81,6 +90,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10098</ID>
               <Description>"Campaign clears"</Description>
+              <LastState Value="1" RealAddress="1ABFDE60AA0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+388</Address>
@@ -88,6 +98,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10099</ID>
               <Description>"Hard Campaign clears"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60AA4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+38C</Address>
@@ -95,6 +106,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10100</ID>
               <Description>"Money Survival clears"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B38"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+420</Address>
@@ -102,6 +114,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10101</ID>
               <Description>"Turn Survival clears"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B34"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+41C</Address>
@@ -109,6 +122,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10102</ID>
               <Description>"Time Survival clears"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B30"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+418</Address>
@@ -116,6 +130,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10103</ID>
               <Description>"Money maps cleared"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B44"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+42C</Address>
@@ -123,6 +138,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10104</ID>
               <Description>"Turn maps cleared"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B40"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+428</Address>
@@ -130,6 +146,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10105</ID>
               <Description>"Time maps cleared"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B3C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+424</Address>
@@ -137,6 +154,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10106</ID>
               <Description>"S Ranks"</Description>
+              <LastState Value="29" RealAddress="1ABFDE60AA8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+390</Address>
@@ -144,6 +162,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10107</ID>
               <Description>"A Ranks"</Description>
+              <LastState Value="3" RealAddress="1ABFDE60AAC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+394</Address>
@@ -151,6 +170,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10108</ID>
               <Description>"B Ranks"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60AB0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+398</Address>
@@ -158,6 +178,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10109</ID>
               <Description>"C Ranks"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60AB4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+39C</Address>
@@ -165,6 +186,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10110</ID>
               <Description>"Won by HQ Capture"</Description>
+              <LastState Value="22" RealAddress="1ABFDE60B20"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+408</Address>
@@ -172,6 +194,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10111</ID>
               <Description>"Won by Rout"</Description>
+              <LastState Value="68" RealAddress="1ABFDE60B24"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+40C</Address>
@@ -179,6 +202,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10112</ID>
               <Description>"Defeats"</Description>
+              <LastState Value="8" RealAddress="1ABFDE60B28"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+410</Address>
@@ -186,6 +210,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10113</ID>
               <Description>"Total ranking of COs"</Description>
+              <LastState Value="464" RealAddress="1ABFDE60AD4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3BC</Address>
@@ -193,6 +218,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10114</ID>
               <Description>"Funds spent"</Description>
+              <LastState Value="25057999" RealAddress="1ABFDE60AD8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3C0</Address>
@@ -200,6 +226,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10115</ID>
               <Description>"Damage inflicted"</Description>
+              <LastState Value="9486306" RealAddress="1ABFDE60ADC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3C4</Address>
@@ -207,6 +234,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10116</ID>
               <Description>"CO Powers used"</Description>
+              <LastState Value="113" RealAddress="1ABFDE60AB8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3A0</Address>
@@ -214,6 +242,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10117</ID>
               <Description>"Super CO Powers used"</Description>
+              <LastState Value="127" RealAddress="1ABFDE60ABC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3A4</Address>
@@ -221,6 +250,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10118</ID>
               <Description>"Tag Powers used"</Description>
+              <LastState Value="52" RealAddress="1ABFDE60AC0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3A8</Address>
@@ -228,6 +258,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10119</ID>
               <Description>"COs tagged in"</Description>
+              <LastState Value="255" RealAddress="1ABFDE60B1C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+404</Address>
@@ -235,6 +266,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10120</ID>
               <Description>"Direct attacks"</Description>
+              <LastState Value="4630" RealAddress="1ABFDE60AC4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3AC</Address>
@@ -242,6 +274,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10121</ID>
               <Description>"Indirect attacks"</Description>
+              <LastState Value="1413" RealAddress="1ABFDE60AC8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3B0</Address>
@@ -249,6 +282,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10122</ID>
               <Description>"Silos used"</Description>
+              <LastState Value="48" RealAddress="1ABFDE60AE0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3C8</Address>
@@ -256,6 +290,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10123</ID>
               <Description>"Bases captured"</Description>
+              <LastState Value="1214" RealAddress="1ABFDE60AD0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3B8</Address>
@@ -263,6 +298,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10124</ID>
               <Description>"Units sent to top screen"</Description>
+              <LastState Value="67" RealAddress="1ABFDE60B2C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+414</Address>
@@ -270,6 +306,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10125</ID>
               <Description>"Supplied/Repaired"</Description>
+              <LastState Value="833" RealAddress="1ABFDE60B04"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3EC</Address>
@@ -277,6 +314,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10126</ID>
               <Description>"Units joined"</Description>
+              <LastState Value="472" RealAddress="1ABFDE60B0C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3F4</Address>
@@ -284,6 +322,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10127</ID>
               <Description>"Units loaded"</Description>
+              <LastState Value="761" RealAddress="1ABFDE60B10"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3F8</Address>
@@ -291,6 +330,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10128</ID>
               <Description>"Units dropped off"</Description>
+              <LastState Value="695" RealAddress="1ABFDE60B14"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3FC</Address>
@@ -298,6 +338,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10129</ID>
               <Description>"Units deleted"</Description>
+              <LastState Value="4" RealAddress="1ABFDE60B08"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3F0</Address>
@@ -305,6 +346,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10130</ID>
               <Description>"Ambushes encountered"</Description>
+              <LastState Value="30" RealAddress="1ABFDE60AE4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3CC</Address>
@@ -312,6 +354,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10094</ID>
               <Description>"Units selected"</Description>
+              <LastState Value="36832" RealAddress="1ABFDE60B18"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+400</Address>
@@ -319,6 +362,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10093</ID>
               <Description>"Spaces moved"</Description>
+              <LastState Value="85861" RealAddress="1ABFDE60AEC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3D4</Address>
@@ -326,6 +370,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10131</ID>
               <Description>"Normal Combat clears"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B48"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+430</Address>
@@ -333,6 +378,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10132</ID>
               <Description>"Hard Combat clears"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B4C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+434</Address>
@@ -340,6 +386,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10133</ID>
               <Description>"Brutal Combat clears"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B50"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+438</Address>
@@ -347,6 +394,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10134</ID>
               <Description>"Combat foes defeated"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B54"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+43C</Address>
@@ -354,6 +402,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10135</ID>
               <Description>"Times Combat lost"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60B58"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+440</Address>
@@ -364,6 +413,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
           <ID>10136</ID>
           <Description>"Units built"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="000076F4" RealAddress="1ABFDE60718"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
@@ -372,6 +422,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10138</ID>
               <Description>"Infantry"</Description>
+              <LastState Value="691" RealAddress="1ABFDE60B60"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+448</Address>
@@ -379,6 +430,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10141</ID>
               <Description>"Mech"</Description>
+              <LastState Value="174" RealAddress="1ABFDE60B64"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+44C</Address>
@@ -386,6 +438,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10142</ID>
               <Description>"Recon"</Description>
+              <LastState Value="99" RealAddress="1ABFDE60B74"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+45C</Address>
@@ -393,6 +446,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10143</ID>
               <Description>"Anti-air"</Description>
+              <LastState Value="80" RealAddress="1ABFDE60B94"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+47C</Address>
@@ -400,6 +454,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10144</ID>
               <Description>"Light tank"</Description>
+              <LastState Value="383" RealAddress="1ABFDE60B70"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+458</Address>
@@ -407,6 +462,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10145</ID>
               <Description>"Medium tank"</Description>
+              <LastState Value="133" RealAddress="1ABFDE60B68"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+450</Address>
@@ -414,6 +470,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10146</ID>
               <Description>"Neotank"</Description>
+              <LastState Value="124" RealAddress="1ABFDE60B7C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+464</Address>
@@ -421,6 +478,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10147</ID>
               <Description>"Megatank"</Description>
+              <LastState Value="88" RealAddress="1ABFDE60B6C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+454</Address>
@@ -428,6 +486,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10148</ID>
               <Description>"Artillery"</Description>
+              <LastState Value="107" RealAddress="1ABFDE60B84"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+46C</Address>
@@ -435,6 +494,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10149</ID>
               <Description>"Rockets"</Description>
+              <LastState Value="108" RealAddress="1ABFDE60B88"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+470</Address>
@@ -442,6 +502,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10150</ID>
               <Description>"Missiles"</Description>
+              <LastState Value="7" RealAddress="1ABFDE60B98"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+480</Address>
@@ -449,6 +510,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10151</ID>
               <Description>"Piperunner"</Description>
+              <LastState Value="7" RealAddress="1ABFDE60B80"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+468</Address>
@@ -456,6 +518,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10152</ID>
               <Description>"APC"</Description>
+              <LastState Value="75" RealAddress="1ABFDE60B78"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+460</Address>
@@ -463,6 +526,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10153</ID>
               <Description>"Fighter"</Description>
+              <LastState Value="74" RealAddress="1ABFDE60B9C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+484</Address>
@@ -470,6 +534,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10154</ID>
               <Description>"Bomber"</Description>
+              <LastState Value="66" RealAddress="1ABFDE60BA0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+488</Address>
@@ -477,6 +542,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10155</ID>
               <Description>"Stealth"</Description>
+              <LastState Value="38" RealAddress="1ABFDE60B8C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+474</Address>
@@ -484,6 +550,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10156</ID>
               <Description>"Black Bomb"</Description>
+              <LastState Value="12" RealAddress="1ABFDE60B90"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+478</Address>
@@ -491,6 +558,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10157</ID>
               <Description>"Battle Copter"</Description>
+              <LastState Value="110" RealAddress="1ABFDE60BA8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+490</Address>
@@ -498,6 +566,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10158</ID>
               <Description>"Transport Copter"</Description>
+              <LastState Value="41" RealAddress="1ABFDE60BAC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+494</Address>
@@ -505,6 +574,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10159</ID>
               <Description>"Battleship"</Description>
+              <LastState Value="51" RealAddress="1ABFDE60BB0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+498</Address>
@@ -512,6 +582,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10160</ID>
               <Description>"Carrier"</Description>
+              <LastState Value="8" RealAddress="1ABFDE60BC0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+4A8</Address>
@@ -519,6 +590,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10161</ID>
               <Description>"Cruiser"</Description>
+              <LastState Value="27" RealAddress="1ABFDE60BB4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+49C</Address>
@@ -526,6 +598,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10162</ID>
               <Description>"Submarine"</Description>
+              <LastState Value="14" RealAddress="1ABFDE60BBC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+4A4</Address>
@@ -533,6 +606,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10163</ID>
               <Description>"Lander"</Description>
+              <LastState Value="45" RealAddress="1ABFDE60BB8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+4A0</Address>
@@ -540,6 +614,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10164</ID>
               <Description>"Black Boat"</Description>
+              <LastState Value="38" RealAddress="1ABFDE60BA4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+48C</Address>
@@ -550,6 +625,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
           <ID>10165</ID>
           <Description>"Foes defeated"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="00000000" RealAddress="1ABFDE60784"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
@@ -558,6 +634,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10166</ID>
               <Description>"Infantry"</Description>
+              <LastState Value="985" RealAddress="1ABFDE60BCC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+448</Address>
@@ -565,6 +642,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10167</ID>
               <Description>"Mech"</Description>
+              <LastState Value="403" RealAddress="1ABFDE60BD0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+44C</Address>
@@ -572,6 +650,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10168</ID>
               <Description>"Recon"</Description>
+              <LastState Value="271" RealAddress="1ABFDE60BE0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+45C</Address>
@@ -579,6 +658,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10169</ID>
               <Description>"Anti-air"</Description>
+              <LastState Value="231" RealAddress="1ABFDE60C00"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+47C</Address>
@@ -586,6 +666,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10170</ID>
               <Description>"Light tank"</Description>
+              <LastState Value="364" RealAddress="1ABFDE60BDC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+458</Address>
@@ -593,6 +674,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10171</ID>
               <Description>"Medium tank"</Description>
+              <LastState Value="127" RealAddress="1ABFDE60BD4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+450</Address>
@@ -600,6 +682,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10172</ID>
               <Description>"Neotank"</Description>
+              <LastState Value="72" RealAddress="1ABFDE60BE8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+464</Address>
@@ -607,6 +690,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10173</ID>
               <Description>"Megatank"</Description>
+              <LastState Value="21" RealAddress="1ABFDE60BD8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+454</Address>
@@ -614,6 +698,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10174</ID>
               <Description>"Artillery"</Description>
+              <LastState Value="150" RealAddress="1ABFDE60BF0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+46C</Address>
@@ -621,6 +706,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10175</ID>
               <Description>"Rockets"</Description>
+              <LastState Value="68" RealAddress="1ABFDE60BF4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+470</Address>
@@ -628,6 +714,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10176</ID>
               <Description>"Missiles"</Description>
+              <LastState Value="12" RealAddress="1ABFDE60C04"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+480</Address>
@@ -635,6 +722,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10177</ID>
               <Description>"Piperunner"</Description>
+              <LastState Value="7" RealAddress="1ABFDE60BEC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+468</Address>
@@ -642,6 +730,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10178</ID>
               <Description>"APC"</Description>
+              <LastState Value="52" RealAddress="1ABFDE60BE4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+460</Address>
@@ -649,6 +738,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10179</ID>
               <Description>"Fighter"</Description>
+              <LastState Value="83" RealAddress="1ABFDE60C08"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+484</Address>
@@ -656,6 +746,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10180</ID>
               <Description>"Bomber"</Description>
+              <LastState Value="25" RealAddress="1ABFDE60C0C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+488</Address>
@@ -663,6 +754,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10181</ID>
               <Description>"Stealth"</Description>
+              <LastState Value="4" RealAddress="1ABFDE60BF8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+474</Address>
@@ -670,6 +762,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10182</ID>
               <Description>"Black Bomb"</Description>
+              <LastState Value="1" RealAddress="1ABFDE60BFC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+478</Address>
@@ -677,6 +770,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10183</ID>
               <Description>"Battle Copter"</Description>
+              <LastState Value="104" RealAddress="1ABFDE60C14"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+490</Address>
@@ -684,6 +778,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10184</ID>
               <Description>"Transport Copter"</Description>
+              <LastState Value="62" RealAddress="1ABFDE60C18"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+494</Address>
@@ -691,6 +786,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10185</ID>
               <Description>"Battleship"</Description>
+              <LastState Value="15" RealAddress="1ABFDE60C1C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+498</Address>
@@ -698,6 +794,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10186</ID>
               <Description>"Carrier"</Description>
+              <LastState Value="0" RealAddress="1ABFDE60C2C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+4A8</Address>
@@ -705,6 +802,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10187</ID>
               <Description>"Cruiser"</Description>
+              <LastState Value="20" RealAddress="1ABFDE60C20"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+49C</Address>
@@ -712,6 +810,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10188</ID>
               <Description>"Submarine"</Description>
+              <LastState Value="26" RealAddress="1ABFDE60C28"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+4A4</Address>
@@ -719,6 +818,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10189</ID>
               <Description>"Lander"</Description>
+              <LastState Value="43" RealAddress="1ABFDE60C24"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+4A0</Address>
@@ -726,6 +826,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10190</ID>
               <Description>"Black Boat"</Description>
+              <LastState Value="42" RealAddress="1ABFDE60C10"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+48C</Address>
@@ -736,6 +837,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
           <ID>10140</ID>
           <Description>"Items destroyed"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="000076F4" RealAddress="1ABFDE60718"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
@@ -744,6 +846,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10191</ID>
               <Description>"Black Cannon"</Description>
+              <LastState Value="1" RealAddress="1ABFDE60AF0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3D8</Address>
@@ -751,6 +854,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10192</ID>
               <Description>"Black Obelisk"</Description>
+              <LastState Value="2" RealAddress="1ABFDE60AF8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3E0</Address>
@@ -758,6 +862,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10193</ID>
               <Description>"Minicannon"</Description>
+              <LastState Value="14" RealAddress="1ABFDE60AF4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3DC</Address>
@@ -765,6 +870,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10194</ID>
               <Description>"Black Crystal"</Description>
+              <LastState Value="10" RealAddress="1ABFDE60AFC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3E4</Address>
@@ -772,6 +878,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10195</ID>
               <Description>"Pipe Seam"</Description>
+              <LastState Value="24" RealAddress="1ABFDE60B00"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3E8</Address>
@@ -779,6 +886,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10196</ID>
               <Description>"Oozium 238"</Description>
+              <LastState Value="34" RealAddress="1ABFDE60C30"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+518</Address>
@@ -786,6 +894,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>10197</ID>
               <Description>"Enemy cannon strikes"</Description>
+              <LastState Value="12" RealAddress="1ABFDE60AE8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
               <Address>+3D0</Address>
@@ -795,12 +904,14 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
         <CheatEntry>
           <ID>10199</ID>
           <Description>"-- Menu Stuff --"</Description>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
           <ID>1</ID>
           <Description>"shop slot 1"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 1F 00 00 00 F8 01 00 00 F8 01 00 00" RealAddress="1ABFDF5D918"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Array of byte</VariableType>
@@ -811,6 +922,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <ID>10091</ID>
               <Description>"Icon"</Description>
               <DropDownListLink>ShopIcons</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDF5D918"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -820,6 +932,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <ID>6</ID>
               <Description>"Function Pointer"</Description>
               <DropDownListLink>ShopFunctions</DropDownListLink>
+              <LastState Value="0000001F" RealAddress="1ABFDF5D928"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -829,6 +942,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <ID>10089</ID>
               <Description>"Function Variable"</Description>
               <DropDownListLink>ShopVariables</DropDownListLink>
+              <LastState Value="F8" RealAddress="1ABFDF5D92C"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -840,6 +954,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
           <ID>3</ID>
           <Description>"shop slot 2"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="FF 1F 00 00 F4 1F 00 00 62 1F 00 00 42 1F 00 00 32 F6 01 00 22 F6 01 00 32 F6 01 00" RealAddress="1ABFDF5D934"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Array of byte</VariableType>
@@ -850,6 +965,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <ID>5</ID>
               <Description>"Icon"</Description>
               <DropDownListLink>ShopIcons</DropDownListLink>
+              <LastState Value="FF" RealAddress="1ABFDF5D934"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -859,6 +975,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <ID>10088</ID>
               <Description>"Function Pointer"</Description>
               <DropDownListLink>ShopFunctions</DropDownListLink>
+              <LastState Value="0001F632" RealAddress="1ABFDF5D944"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -868,6 +985,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <ID>10087</ID>
               <Description>"Function Variable"</Description>
               <DropDownListLink>ShopVariables</DropDownListLink>
+              <LastState Value="22" RealAddress="1ABFDF5D948"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -876,6 +994,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
             <CheatEntry>
               <ID>4</ID>
               <Description>"Description"</Description>
+              <LastState Value="0001F632" RealAddress="1ABFDF5D94C"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>4 Bytes</VariableType>
@@ -886,6 +1005,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
         <CheatEntry>
           <ID>10198</ID>
           <Description>"versus map menu selection struct"</Description>
+          <LastState Value="00 00 00 00" RealAddress="1ABFDE6C76C"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Array of byte</VariableType>
@@ -895,6 +1015,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
         <CheatEntry>
           <ID>10278</ID>
           <Description>"Map Tile Types"</Description>
+          <LastState Value="03 03 03 03" RealAddress="1ABFDD550F0"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <Color>808080</Color>
@@ -909,6 +1030,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
 02:River
 07:Sea
 </DropDownList>
+              <LastState Value="03" RealAddress="1ABFDD550F0"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <Color>808080</Color>
@@ -920,6 +1042,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
         <CheatEntry>
           <ID>10280</ID>
           <Description>"Map Tileset"</Description>
+          <LastState Value="20 00 20 00" RealAddress="1ABFDD546E0"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>Array of byte</VariableType>
@@ -981,6 +1104,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
 01DC:Lab GE
 01DD:Lab YC
 </DropDownList>
+              <LastState Value="0020" RealAddress="1ABFDD546E0"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
@@ -992,6 +1116,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
           <ID>356912</ID>
           <Description>"Player Data"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="000076F4" RealAddress="1ABFDE60718"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>4 Bytes</VariableType>
@@ -1002,6 +1127,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <Description>"P1 Controller"</Description>
               <Options moManualExpandCollapse="1"/>
               <DropDownListLink>ControllerType</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDD5931A"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1011,6 +1137,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356894</ID>
                   <Description>"Faction Colour"</Description>
                   <DropDownListLink>FactionColour</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD59319"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1020,6 +1147,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356896</ID>
                   <Description>"Team"</Description>
                   <DropDownListLink>TeamType</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD5932C"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1029,6 +1157,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356898</ID>
                   <Description>"AI"</Description>
                   <DropDownListLink>AIType</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD5932E"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1037,6 +1166,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                 <CheatEntry>
                   <ID>356913</ID>
                   <Description>"Current G"</Description>
+                  <LastState Value="0" RealAddress="1ABFDD59300"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>-1A</Address>
@@ -1048,6 +1178,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <Description>"P2 Controller"</Description>
               <Options moManualExpandCollapse="1"/>
               <DropDownListLink>ControllerType</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDD593B2"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1057,6 +1188,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356901</ID>
                   <Description>"Faction Colour"</Description>
                   <DropDownListLink>FactionColour</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD593B1"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1066,6 +1198,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356902</ID>
                   <Description>"Team"</Description>
                   <DropDownListLink>TeamType</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD593C4"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1075,6 +1208,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356903</ID>
                   <Description>"AI"</Description>
                   <DropDownListLink>AIType</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD593C6"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1083,6 +1217,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                 <CheatEntry>
                   <ID>356914</ID>
                   <Description>"Current G"</Description>
+                  <LastState Value="0" RealAddress="1ABFDD59398"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>-1A</Address>
@@ -1094,6 +1229,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <Description>"P3 Controller"</Description>
               <Options moManualExpandCollapse="1"/>
               <DropDownListLink>ControllerType</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDD5944A"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1103,6 +1239,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356909</ID>
                   <Description>"Faction Colour"</Description>
                   <DropDownListLink>FactionColour</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD59449"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1112,6 +1249,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356910</ID>
                   <Description>"Team"</Description>
                   <DropDownListLink>TeamType</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD5945C"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1121,6 +1259,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356911</ID>
                   <Description>"AI"</Description>
                   <DropDownListLink>AIType</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD5945E"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1129,6 +1268,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                 <CheatEntry>
                   <ID>356915</ID>
                   <Description>"Current G"</Description>
+                  <LastState Value="0" RealAddress="1ABFDD59430"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>-1A</Address>
@@ -1140,6 +1280,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
               <Description>"P4 Controller"</Description>
               <Options moManualExpandCollapse="1"/>
               <DropDownListLink>ControllerType</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDD594E2"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1149,6 +1290,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356905</ID>
                   <Description>"Faction Colour"</Description>
                   <DropDownListLink>FactionColour</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD594E1"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1158,6 +1300,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356906</ID>
                   <Description>"Team"</Description>
                   <DropDownListLink>TeamType</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD594F4"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1167,6 +1310,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                   <ID>356907</ID>
                   <Description>"AI"</Description>
                   <DropDownListLink>AIType</DropDownListLink>
+                  <LastState Value="00" RealAddress="1ABFDD594F6"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1175,6 +1319,7 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
                 <CheatEntry>
                   <ID>356916</ID>
                   <Description>"Current G"</Description>
+                  <LastState Value="0" RealAddress="1ABFDD594C8"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>4 Bytes</VariableType>
                   <Address>-1A</Address>
@@ -1186,11 +1331,13 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
         <CheatEntry>
           <ID>10277</ID>
           <Description>"-- Sturm Mod Stuff --"</Description>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
           <ID>356920</ID>
           <Description>"Oozium Repair Cost"</Description>
+          <LastState Value="0" RealAddress="1ABFDEC5ABC"/>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>2 Bytes</VariableType>
           <Address>+648AC+6C*1A</Address>
@@ -1201,35 +1348,21 @@ addrRAMStart = AOBScanUnique("FF DE FF E7 FF DE FF E7 FF DE FF E7","+W-C-X",2,0)
           <DropDownList DisplayValueAsItem="1">0004:Normal
 0104:Re-Boot Camp
 </DropDownList>
+          <LastState Value="0004" RealAddress="1ABFDFA9B34"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>2 Bytes</VariableType>
           <Address>+14941C</Address>
         </CheatEntry>
         <CheatEntry>
-          <ID>10275</ID>
-          <Description>"Danger Pool String Ptr"</Description>
-          <DropDownList DisplayValueAsItem="1">00000000:Broken!!!
-02300DDD:Test Island 4
-</DropDownList>
+          <ID>356935</ID>
+          <Description>"Narrator"</Description>
+          <DropDownListLink>COValues</DropDownListLink>
+          <LastState Value="37" RealAddress="1ABFDE6DB10"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>4 Bytes</VariableType>
-          <Address>+805C8</Address>
-        </CheatEntry>
-        <CheatEntry>
-          <ID>10276</ID>
-          <Description>"Test Island 4 string"</Description>
-          <DropDownList DisplayValueAsItem="1">Test Island 4:(Default)
-Danger Pool:(Repair Other Map)
-</DropDownList>
-          <ShowAsSigned>0</ShowAsSigned>
-          <VariableType>String</VariableType>
-          <Length>13</Length>
-          <Unicode>0</Unicode>
-          <CodePage>0</CodePage>
-          <ZeroTerminate>1</ZeroTerminate>
-          <Address>+706C5</Address>
+          <VariableType>Byte</VariableType>
+          <Address>+D3F8</Address>
         </CheatEntry>
         <CheatEntry>
           <ID>10200</ID>
@@ -1277,6 +1410,7 @@ Danger Pool:(Repair Other Map)
 00DB:
 00DC:The Swarm
 </DropDownList>
+          <LastState Value="0067" RealAddress="1ABFDD53CC0"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>2 Bytes</VariableType>
@@ -1328,6 +1462,7 @@ Danger Pool:(Repair Other Map)
 00DB:
 00DC:The Swarm
 </DropDownList>
+          <LastState Value="0001" RealAddress="1ABFDD59E90"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>2 Bytes</VariableType>
@@ -1337,6 +1472,7 @@ Danger Pool:(Repair Other Map)
           <ID>356917</ID>
           <Description>"Map Headers"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="0000000000000000" RealAddress="1ABFDEABD28"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
@@ -1346,6 +1482,7 @@ Danger Pool:(Repair Other Map)
               <ID>356923</ID>
               <Description>"somewhere"</Description>
               <Options moManualExpandCollapse="1"/>
+              <LastState Value="0000000000000000" RealAddress="1ABFDEB8FC8"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>8 Bytes</VariableType>
@@ -1355,6 +1492,7 @@ Danger Pool:(Repair Other Map)
                   <ID>356924</ID>
                   <Description>"Perimeter Tile"</Description>
                   <DropDownListLink>PerimeterTile</DropDownListLink>
+                  <LastState Value="78" RealAddress="1ABFDEB9064"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1363,6 +1501,7 @@ Danger Pool:(Repair Other Map)
                 <CheatEntry>
                   <ID>356925</ID>
                   <Description>"?"</Description>
+                  <LastState Value="00" RealAddress="1ABFDEB9065"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1372,6 +1511,7 @@ Danger Pool:(Repair Other Map)
                   <ID>356927</ID>
                   <Description>"Perimeter Palette"</Description>
                   <DropDownListLink>PerimeterPalette</DropDownListLink>
+                  <LastState Value="0207" RealAddress="1ABFDEB9066"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>2 Bytes</VariableType>
@@ -1383,6 +1523,7 @@ Danger Pool:(Repair Other Map)
               <ID>356930</ID>
               <Description>"Crater Isle"</Description>
               <Options moManualExpandCollapse="1"/>
+              <LastState Value="0000000000000000" RealAddress="1ABFDEABE68"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>8 Bytes</VariableType>
@@ -1392,6 +1533,7 @@ Danger Pool:(Repair Other Map)
                   <ID>356931</ID>
                   <Description>"Perimeter Tile"</Description>
                   <DropDownListLink>PerimeterTile</DropDownListLink>
+                  <LastState Value="78" RealAddress="1ABFDEABF04"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1400,6 +1542,7 @@ Danger Pool:(Repair Other Map)
                 <CheatEntry>
                   <ID>356932</ID>
                   <Description>"?"</Description>
+                  <LastState Value="00" RealAddress="1ABFDEABF05"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Byte</VariableType>
@@ -1409,6 +1552,7 @@ Danger Pool:(Repair Other Map)
                   <ID>356933</ID>
                   <Description>"Perimeter Palette"</Description>
                   <DropDownListLink>PerimeterPalette</DropDownListLink>
+                  <LastState Value="0207" RealAddress="1ABFDEABF06"/>
                   <ShowAsHex>1</ShowAsHex>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>2 Bytes</VariableType>
@@ -1420,17 +1564,19 @@ Danger Pool:(Repair Other Map)
         </CheatEntry>
         <CheatEntry>
           <ID>10211</ID>
-          <Description>"COs in Setup Menu"</Description>
+          <Description>"COs in Versus Menu"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="0807060504030201" RealAddress="1ABFDE6EDE8"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>8 Bytes</VariableType>
-          <Address>+FD0E8</Address>
+          <Address>+E6D0</Address>
           <CheatEntries>
             <CheatEntry>
               <ID>10212</ID>
               <Description>"CO 1-1"</Description>
               <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="01" RealAddress="1ABFDE6EDE8"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1440,6 +1586,7 @@ Danger Pool:(Repair Other Map)
               <ID>10219</ID>
               <Description>"CO 1-2"</Description>
               <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="02" RealAddress="1ABFDE6EDE9"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1449,6 +1596,7 @@ Danger Pool:(Repair Other Map)
               <ID>10213</ID>
               <Description>"CO 2-1"</Description>
               <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="03" RealAddress="1ABFDE6EDEA"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1458,6 +1606,7 @@ Danger Pool:(Repair Other Map)
               <ID>10214</ID>
               <Description>"CO 2-2"</Description>
               <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="04" RealAddress="1ABFDE6EDEB"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1467,6 +1616,7 @@ Danger Pool:(Repair Other Map)
               <ID>10215</ID>
               <Description>"CO 3-1"</Description>
               <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="05" RealAddress="1ABFDE6EDEC"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1476,6 +1626,7 @@ Danger Pool:(Repair Other Map)
               <ID>10216</ID>
               <Description>"CO 3-2"</Description>
               <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="06" RealAddress="1ABFDE6EDED"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1485,6 +1636,7 @@ Danger Pool:(Repair Other Map)
               <ID>10217</ID>
               <Description>"CO 4-1"</Description>
               <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="07" RealAddress="1ABFDE6EDEE"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1494,6 +1646,99 @@ Danger Pool:(Repair Other Map)
               <ID>10218</ID>
               <Description>"CO 4-2"</Description>
               <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="08" RealAddress="1ABFDE6EDEF"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+7</Address>
+            </CheatEntry>
+          </CheatEntries>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>356936</ID>
+          <Description>"COs in Setup Menu"</Description>
+          <Options moManualExpandCollapse="1"/>
+          <LastState Value="0000000000000000" RealAddress="1ABFDF5D800"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <VariableType>8 Bytes</VariableType>
+          <Address>+FD0E8</Address>
+          <CheatEntries>
+            <CheatEntry>
+              <ID>356937</ID>
+              <Description>"CO 1-1"</Description>
+              <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDF5D800"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+0</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356938</ID>
+              <Description>"CO 1-2"</Description>
+              <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDF5D801"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+1</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356939</ID>
+              <Description>"CO 2-1"</Description>
+              <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDF5D802"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+2</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356940</ID>
+              <Description>"CO 2-2"</Description>
+              <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDF5D803"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+3</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356941</ID>
+              <Description>"CO 3-1"</Description>
+              <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDF5D804"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+4</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356942</ID>
+              <Description>"CO 3-2"</Description>
+              <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDF5D805"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+5</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356943</ID>
+              <Description>"CO 4-1"</Description>
+              <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDF5D806"/>
+              <ShowAsHex>1</ShowAsHex>
+              <ShowAsSigned>0</ShowAsSigned>
+              <VariableType>Byte</VariableType>
+              <Address>+6</Address>
+            </CheatEntry>
+            <CheatEntry>
+              <ID>356944</ID>
+              <Description>"CO 4-2"</Description>
+              <DropDownListLink>COValues</DropDownListLink>
+              <LastState Value="00" RealAddress="1ABFDF5D807"/>
               <ShowAsHex>1</ShowAsHex>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>Byte</VariableType>
@@ -1505,36 +1750,41 @@ Danger Pool:(Repair Other Map)
           <ID>10201</ID>
           <Description>"CO Exp (Sturm mod only)"</Description>
           <Options moManualExpandCollapse="1"/>
+          <LastState Value="0000" RealAddress="1ABFDF5A800"/>
           <ShowAsHex>1</ShowAsHex>
           <ShowAsSigned>0</ShowAsSigned>
           <VariableType>2 Bytes</VariableType>
-          <Address>+0</Address>
+          <Address>+FA0E8</Address>
           <CheatEntries>
             <CheatEntry>
               <ID>10257</ID>
               <Description>"Nell Exp"</Description>
+              <LastState Value="10000" RealAddress="1ABFDF5A81C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*01</Address>
+              <Address>+1C*01</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>10202</ID>
               <Description>"Sturm Exp"</Description>
+              <LastState Value="10000" RealAddress="1ABFDF5A934"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*0B</Address>
+              <Address>+1C*0B</Address>
             </CheatEntry>
             <CheatEntry>
               <ID>10203</ID>
               <Description>"OS Soldier Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5AB48"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*1E</Address>
+              <Address>+1C*1E</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10208</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB4B"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1546,6 +1796,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10209</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB4B"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1557,6 +1808,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10210</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB4B"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1569,14 +1821,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10204</ID>
               <Description>"BM Soldier Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5AB64"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*1F</Address>
+              <Address>+1C*1F</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10245</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB67"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1588,6 +1842,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10246</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB67"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1599,6 +1854,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10247</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB67"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1611,14 +1867,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10205</ID>
               <Description>"GE Soldier Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5AB80"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*20</Address>
+              <Address>+1C*20</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10248</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB83"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1630,6 +1888,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10249</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB83"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1641,6 +1900,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10250</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB83"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1653,14 +1913,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10206</ID>
               <Description>"YC Soldier Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5AB9C"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*21</Address>
+              <Address>+1C*21</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10251</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB9F"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1672,6 +1934,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10252</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB9F"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1683,6 +1946,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10253</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AB9F"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1695,14 +1959,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10207</ID>
               <Description>"BH Soldier Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5ABB8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*22</Address>
+              <Address>+1C*22</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10254</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ABBB"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1714,6 +1980,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10255</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ABBB"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1725,6 +1992,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10256</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ABBB"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1737,14 +2005,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10221</ID>
               <Description>"Clone Andy Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5ABD4"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*23</Address>
+              <Address>+1C*23</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10222</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ABD7"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1756,6 +2026,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10223</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ABD7"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1767,6 +2038,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10224</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ABD7"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1779,14 +2051,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10233</ID>
               <Description>"RadioTails Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5AD94"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*33</Address>
+              <Address>+1C*33</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10234</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AD97"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1798,6 +2072,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10235</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AD97"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1809,6 +2084,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10236</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AD97"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1821,14 +2097,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10241</ID>
               <Description>"Xenesis Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5ADB0"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*34</Address>
+              <Address>+1C*34</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10242</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ADB3"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1840,6 +2118,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10243</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ADB3"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1851,6 +2130,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10244</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ADB3"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1863,14 +2143,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10237</ID>
               <Description>"Krys Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5ADCC"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*35</Address>
+              <Address>+1C*35</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10238</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ADCF"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1882,6 +2164,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10239</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ADCF"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1893,6 +2176,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10240</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ADCF"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1905,14 +2189,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10225</ID>
               <Description>"CM9 Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5ADE8"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*36</Address>
+              <Address>+1C*36</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10226</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ADEB"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1924,6 +2210,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10227</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ADEB"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1935,6 +2222,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10228</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5ADEB"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1947,14 +2235,16 @@ Danger Pool:(Repair Other Map)
             <CheatEntry>
               <ID>10229</ID>
               <Description>"Lau Exp"</Description>
+              <LastState Value="0" RealAddress="1ABFDF5AE04"/>
               <ShowAsSigned>0</ShowAsSigned>
               <VariableType>2 Bytes</VariableType>
-              <Address>+126E8+1C*37</Address>
+              <Address>+1C*37</Address>
               <CheatEntries>
                 <CheatEntry>
                   <ID>10230</ID>
                   <Description>"Color 1"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AE07"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>3</BitStart>
@@ -1966,6 +2256,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10231</ID>
                   <Description>"Color 2"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AE07"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>4</BitStart>
@@ -1977,6 +2268,7 @@ Danger Pool:(Repair Other Map)
                   <ID>10232</ID>
                   <Description>"Color 3"</Description>
                   <DropDownListLink>BOOLEAN</DropDownListLink>
+                  <LastState Value="0" RealAddress="1ABFDF5AE07"/>
                   <ShowAsSigned>0</ShowAsSigned>
                   <VariableType>Binary</VariableType>
                   <BitStart>5</BitStart>
@@ -1988,12 +2280,42 @@ Danger Pool:(Repair Other Map)
             </CheatEntry>
           </CheatEntries>
         </CheatEntry>
+        <CheatEntry>
+          <ID>10275</ID>
+          <Description>"Danger Pool String Ptr"</Description>
+          <DropDownList DisplayValueAsItem="1">00000000:Broken!!!
+02300DDD:Test Island 4
+</DropDownList>
+          <LastState Value="6C61206E" RealAddress="1ABFDEE0CE0"/>
+          <ShowAsHex>1</ShowAsHex>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>C0C0C0</Color>
+          <VariableType>4 Bytes</VariableType>
+          <Address>+805C8</Address>
+        </CheatEntry>
+        <CheatEntry>
+          <ID>10276</ID>
+          <Description>"Test Island 4 string"</Description>
+          <DropDownList DisplayValueAsItem="1">Test Island 4:(Default)
+Danger Pool:(Repair Other Map)
+</DropDownList>
+          <LastState RealAddress="1ABFDED0DDD"/>
+          <ShowAsSigned>0</ShowAsSigned>
+          <Color>C0C0C0</Color>
+          <VariableType>String</VariableType>
+          <Length>13</Length>
+          <Unicode>0</Unicode>
+          <CodePage>0</CodePage>
+          <ZeroTerminate>1</ZeroTerminate>
+          <Address>+706C5</Address>
+        </CheatEntry>
       </CheatEntries>
     </CheatEntry>
     <CheatEntry>
       <ID>10083</ID>
       <Description>"Value Lists"</Description>
       <Options moManualExpandCollapse="1"/>
+      <LastState Value="" RealAddress="00000000"/>
       <Color>C0C0C0</Color>
       <GroupHeader>1</GroupHeader>
       <CheatEntries>
@@ -2003,6 +2325,7 @@ Danger Pool:(Repair Other Map)
           <DropDownList DisplayValueAsItem="1">0:False
 1:True
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -2012,6 +2335,7 @@ Danger Pool:(Repair Other Map)
 19:Character
 1A:Character Color
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -2021,6 +2345,7 @@ Danger Pool:(Repair Other Map)
 02101A98:Character
 02101A68:Colors
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -2031,12 +2356,18 @@ Danger Pool:(Repair Other Map)
 1C:Von Bolt
 20:Hard Campaign
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
           <ID>10220</ID>
           <Description>"COValues"</Description>
-          <DropDownList DisplayValueAsItem="1">1D:Von Bolt?
+          <DropDownList DisplayValueAsItem="1">1D:Von Bolt Campaign
+1E:OS Soldier
+1F:BM Soldier
+20:GE Soldier
+21:YC Soldier
+22:BH Soldier
 23:Clone Andy
 24:Sturm AW1
 25:Sturm AW1?
@@ -2046,6 +2377,7 @@ Danger Pool:(Repair Other Map)
 36:CM9
 37:Lau
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -2054,6 +2386,7 @@ Danger Pool:(Repair Other Map)
           <DropDownList DisplayValueAsItem="1">01:Player
 02:Computer
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -2065,6 +2398,7 @@ Danger Pool:(Repair Other Map)
 04:Yellow Comet
 05:Black Hole
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -2075,6 +2409,7 @@ Danger Pool:(Repair Other Map)
 02:Team C
 03:Team D
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -2085,6 +2420,7 @@ Danger Pool:(Repair Other Map)
 02:General
 03:Defense
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -2130,6 +2466,7 @@ CC:River Vert.
 D1:River 4-Way
 D7:River Hori.
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
         <CheatEntry>
@@ -2151,6 +2488,7 @@ D7:River Hori.
 0207:Perimeter Water
 0301:Perimeter Land
 </DropDownList>
+          <LastState Value="" RealAddress="00000000"/>
           <GroupHeader>1</GroupHeader>
         </CheatEntry>
       </CheatEntries>
